@@ -11,19 +11,19 @@ A blog page single page application project developed with Vue.js, Vue-Router, V
 
 Some snapshots of the page application:
 
-![1565623798173](C:\Users\User\AppData\Roaming\Typora\typora-user-images\1565623798173.png)
+![1565623798173](https://user-images.githubusercontent.com/44102726/62879885-17e15500-bcfa-11e9-9cf5-27fb2c4320c4.png)
 
 
 
-![1565623841730](C:\Users\User\AppData\Roaming\Typora\typora-user-images\1565623841730.png)
+![1565623841730](https://user-images.githubusercontent.com/44102726/62879901-1e6fcc80-bcfa-11e9-9eed-eca8ae4bc684.png)
 
 
 
-![1565624016077](C:\Users\User\AppData\Roaming\Typora\typora-user-images\1565624016077.png)
+![1565624016077](https://user-images.githubusercontent.com/44102726/62879903-1fa0f980-bcfa-11e9-96e4-6669cd015223.png)
 
 
 
-![1565624094476](C:\Users\User\AppData\Roaming\Typora\typora-user-images\1565624094476.png)
+![1565624094476](https://user-images.githubusercontent.com/44102726/62879908-22035380-bcfa-11e9-9a0f-24dfd9fa1fcf.png)
 
 Extra stuffs to deal with:
 
