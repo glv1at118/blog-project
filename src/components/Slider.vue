@@ -1,46 +1,35 @@
 <template>
   <div id="sliderContainer" v-on:mouseenter="pause" v-on:mouseleave="unpause">
     <ul id="slider" ref="slider">
+      <!-- bind @click event callbacks to the "li" -->
       <li class="slide">
         <h1>T1: A Discussion of The Theory of "Hello World"</h1>
         <br />
         <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
-        <br />
-        <div>
-          <a href="#">Read more...</a>
-        </div>
       </li>
       <li class="slide">
         <h1>T2: A detailed analysis of Hello World Data Model</h1>
         <br />
         <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
-        <br />
-        <div>
-          <a href="#">Read more...</a>
-        </div>
       </li>
       <li class="slide">
         <h1>T3: Hello World is An Old Proverb in the Programming World</h1>
         <br />
         <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
-        <br />
-        <div>
-          <a href="#">Read more...</a>
-        </div>
       </li>
       <li class="slide">
         <h1>T1: A Discussion of The Theory of "Hello World"</h1>
         <br />
         <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
-        <br />
-        <div>
-          <a href="#">Read more...</a>
-        </div>
       </li>
     </ul>
     <div id="btn_previous" v-on:click="goPrevious">&lt;</div>
     <div id="btn_next" v-on:click="goNext">&gt;</div>
-    <div id="pagination_box" ref="pagination_box">{{i}} / {{num}}</div>
+    <div id="pagination_box" ref="pagination_box">
+      <ul>
+        <li v-for="x in num" v-bind:key="x" v-bind:class="['dot', x===i? 'dot-active': '']"></li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -200,10 +189,11 @@ export default {
   width: 25%;
   height: 100%;
   float: left;
-  padding: 40px;
+  padding: 40px 130px 40px 130px;
   background-image: url("../assets/slide.png");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 .slide h1 {
   font-size: 48px;
@@ -214,46 +204,52 @@ export default {
 #btn_previous,
 #btn_next {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.4);
-  width: 30px;
-  height: 48px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
   font-size: 30px;
-  font-weight: bold;
   text-align: center;
   line-height: 42px;
-  top: 176px;
+  top: 150px;
   cursor: pointer;
   user-select: none;
+  border-radius: 50%;
 }
 #btn_previous {
-  left: 0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  left: 40px;
 }
 #btn_next {
-  right: 0;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  right: 40px;
 }
 #btn_previous:hover,
 #btn_next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 #pagination_box {
-  background-color: rgba(255, 255, 255, 0.4);
-  font-size: 24px;
   position: absolute;
   bottom: 20px;
   width: 120px;
   height: 30px;
-  line-height: 30px;
-  text-align: center;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 a {
   color: white;
 }
 a:hover {
   text-decoration: underline;
+}
+.dot {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 12px;
+  height: 12px;
+  float: left;
+  box-sizing: border-box;
+  margin: 9px;
+  border-radius: 50%;
+}
+.dot-active {
+  background-color: rgba(255, 255, 255) !important;
 }
 </style>

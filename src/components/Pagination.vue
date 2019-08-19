@@ -125,7 +125,6 @@ export default {
 
 <style scoped>
 #pageLayout {
-  background-color: #e6e6e6;
   padding-top: 10px;
   padding-bottom: 20px;
   width: 90%;

@@ -5,7 +5,8 @@
       v-bind:placeholder="placeHolderText"
       v-on:input="uploadQueryWord"
       ref="word"
-      v-bind:value="queryWord.queryContent"
+      v-on:focus="toggleFocus"
+      v-on:blur="toggleFocus"
     />
     <div
       id="searchTagBtn"
@@ -44,7 +45,8 @@ export default {
   name: "Search",
   data() {
     return {
-      option: "title" // option can either be "title" or "tag", default is "title"
+      option: "title", // option can either be "title" or "tag", default is "title"
+      isFocused: false
     };
   },
   computed: {
@@ -56,6 +58,9 @@ export default {
     ...mapState(["queryWord"]),
     ...mapGetters(["filteredEssays"]),
     display() {
+      if (!this.isFocused) {
+        return false;
+      }
       return this.queryWord.queryContent === "" ? false : true;
     }
   },
@@ -86,6 +91,36 @@ export default {
         queryType: this.option,
         queryContent: wordVal
       });
+    },
+    // this method sets the border bottom left and right radius of the input element
+    setInputBorderStyle(radius) {
+      this.$refs.word.style.borderBottomLeftRadius = radius + "px";
+      this.$refs.word.style.borderBottomRightRadius = radius + "px";
+    },
+    toggleFocus() {
+      this.isFocused = !this.isFocused;
+      if (!this.isFocused) {
+        this.setInputBorderStyle(25);
+      } else {
+        if (this.queryWord.queryContent === "") {
+          this.setInputBorderStyle(25);
+        } else {
+          this.setInputBorderStyle(0);
+        }
+      }
+    }
+  },
+  watch: {
+    // deep watch on the query content. Based on this and set the input border bottom styles
+    queryWord: {
+      handler(newVal) {
+        if (newVal.queryContent === "") {
+          this.setInputBorderStyle(25);
+        } else {
+          this.setInputBorderStyle(0);
+        }
+      },
+      deep: true
     }
   }
 };
@@ -111,8 +146,10 @@ input {
   font-size: 24px;
   padding-left: 20px;
   border: 1px solid gray;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 25px;
+}
+input:focus {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
 }
 div #searchTitleBtn,
 div #searchTagBtn {

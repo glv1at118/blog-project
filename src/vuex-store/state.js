@@ -7,7 +7,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title1: The Elegance of Baseball: Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["ball", "sports", "olympics"],
             editorAreaShow: false
         },
@@ -18,7 +18,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title2: The Elegance of Football",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["sports", "world-cup", "health", "baseball", "match", "analytics", "cool", "javascript", "python", "c++", "object oriented programming", "linux", "operating system", "open source project"],
             editorAreaShow: false
         },
@@ -29,7 +29,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title3: The Elegance of Soccer",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Game", "america"],
             editorAreaShow: false
         },
@@ -40,7 +40,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title4: The Elegance of Basketball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["NBA", "Data", "ball"],
             editorAreaShow: false
         },
@@ -51,7 +51,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title5: The Elegance of Tennis",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["field", "small", "fast"],
             editorAreaShow: false
         },
@@ -62,7 +62,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title6: The Elegance of Swimming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "swim"],
             editorAreaShow: false
         },
@@ -73,7 +73,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title7: The Elegance of Track & Field",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["field", "track", "olympics", "match"],
             editorAreaShow: false
         },
@@ -84,7 +84,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title8: The Elegance of Olympics",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Rio", "2016", "Brazil"],
             editorAreaShow: false
         },
@@ -95,7 +95,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title9: The Elegance of Cycling",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain", "speed"],
             editorAreaShow: false
         },
@@ -106,7 +106,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title10: The Elegance of Parkour",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["parkour", "dangerous"],
             editorAreaShow: false
         },
@@ -117,7 +117,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title11: The Elegance of Skydiving",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["extreme", "helicopter", "sky", "cool"],
             editorAreaShow: false
         },
@@ -128,7 +128,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title12: The Elegance of Surfing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "match", "health"],
             editorAreaShow: false
         },
@@ -139,7 +139,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title13: The Elegance of Skiing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["snow", "speed"],
             editorAreaShow: false
         },
@@ -150,7 +150,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title14: The Elegance of Hiking",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain"],
             editorAreaShow: false
         },
@@ -161,7 +161,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title15: The Elegance of Programming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["computer", "data"],
             editorAreaShow: false
         },
@@ -172,7 +172,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title16: The Elegance of Volleyball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: [],
             editorAreaShow: false
         },
@@ -183,7 +183,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title17: The Elegance of Data",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["data", "computer", "technology"],
             editorAreaShow: false
         },
@@ -194,7 +194,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "hahfrgaffweasdg",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["ball", "sports", "olympics"],
             editorAreaShow: false
         },
@@ -205,7 +205,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "erghashtTitle2: The Elegance of Football",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["sports", "world-cup", "health", "baseball", "match", "analytics", "cool", "javascript", "python", "c++", "object oriented programming", "linux", "operating system", "open source project"],
             editorAreaShow: false
         },
@@ -216,7 +216,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title3: The Erthjdashjrthadhlegance of Soccer",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Game", "america"],
             editorAreaShow: false
         },
@@ -227,7 +227,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title4: Theehhdfashrehadh Elegance of Basketball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["NBA", "Data", "ball"],
             editorAreaShow: false
         },
@@ -238,7 +238,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title5: The Ehthjadgdasgasgraewlegance of Tennis",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["field", "small", "fast"],
             editorAreaShow: false
         },
@@ -249,7 +249,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title6: The Eleghagasgagasgraewance of Swimming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "swim"],
             editorAreaShow: false
         },
@@ -260,7 +260,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title7: The Elegartyehryewy2535325nce of Track & Field",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["field", "track", "olympics", "match"],
             editorAreaShow: false
         },
@@ -271,7 +271,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title8: The Elegbbsdvtbn t34v34bg34ance of Olympics",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Rio", "2016", "Brazil"],
             editorAreaShow: false
         },
@@ -282,7 +282,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title9: The Eleaneyebgebtyb34ybgance of Cycling",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain", "speed"],
             editorAreaShow: false
         },
@@ -293,7 +293,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title10: The Eleganc5b2b6b245b634b62e of Parkour",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["parkour", "dangerous"],
             editorAreaShow: false
         },
@@ -304,7 +304,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title11: The Eleganc6b2362b346bb23b6e of Skydiving",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["extreme", "helicopter", "sky", "cool"],
             editorAreaShow: false
         },
@@ -315,7 +315,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title12: The Elegab426b34b23b36nce of Surfing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "match", "health"],
             editorAreaShow: false
         },
@@ -326,7 +326,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title13: The Elegab236b34b6267n6b5bnce of Skiing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["snow", "speed"],
             editorAreaShow: false
         },
@@ -337,7 +337,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title14: The Elegan62364n262b634n2362bnce of Hiking",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain"],
             editorAreaShow: false
         },
@@ -348,7 +348,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title15: The Elegatrnetgebtbtrbtvqnce of Programming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["computer", "data"],
             editorAreaShow: false
         },
@@ -359,7 +359,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title16: The Elegatnqebrhtqqgvvtnce of Volleyball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: [],
             editorAreaShow: false
         },
@@ -370,7 +370,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title17: The Elegance otnqewtbhqtqvvqtwef Data",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["data", "computer", "technology"],
             editorAreaShow: false
         },
@@ -381,7 +381,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title1: The Elegance of Baseball: Baseball is good, Baseball is good, Baseball is good, Baseball is goodbqtbqwtebqwtb, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good, Baseball is good",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["ball", "sports", "olympics"],
             editorAreaShow: false
         },
@@ -392,7 +392,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title2: The Elegance otqnehbtqvgtgqwgf Football",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["sports", "world-cup", "health", "baseball", "match", "analytics", "cool", "javascript", "python", "c++", "object oriented programming", "linux", "operating system", "open source project"],
             editorAreaShow: false
         },
@@ -403,7 +403,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title3: The Elegance ofhjgfghqrgregregqer Soccer",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Game", "america"],
             editorAreaShow: false
         },
@@ -414,7 +414,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title4: The Elegance otebhyebevyqkykf Basketball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["NBA", "Data", "ball"],
             editorAreaShow: false
         },
@@ -425,7 +425,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title5: The Elegance.ipo,ipip,.iop.oip.][p[p[]]] of Tennis",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["field", "small", "fast"],
             editorAreaShow: false
         },
@@ -436,7 +436,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title6: The Elegartneryn5463754733nce of Swimming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "swim"],
             editorAreaShow: false
         },
@@ -447,7 +447,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title7: The Elegance of7h34753g7347g Track & Field",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["field", "track", "olympics", "match"],
             editorAreaShow: false
         },
@@ -458,7 +458,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title8: The Elegance of O47nj375y2cf62f64f2lympics",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Rio", "2016", "Brazil"],
             editorAreaShow: false
         },
@@ -469,7 +469,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title9: The Elegance of264f642f6242f Cycling",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain", "speed"],
             editorAreaShow: false
         },
@@ -480,7 +480,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title10: The Elegance of Parg263g426g3462g432gkour",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["parkour", "dangerous"],
             editorAreaShow: false
         },
@@ -491,7 +491,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title11: The Elegance of Sg264g26g634g236g4326gkydiving",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["extreme", "helicopter", "sky", "cool"],
             editorAreaShow: false
         },
@@ -502,7 +502,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title12: The Eleganc2f364f26f436f2e of Surfing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "match", "health"],
             editorAreaShow: false
         },
@@ -513,7 +513,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title13: The Elegance ovgwertcvfewrqfrqwcff Skiing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["snow", "speed"],
             editorAreaShow: false
         },
@@ -524,7 +524,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title14: The Elegance tbqtceqrvervqewrvof Hiking",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain"],
             editorAreaShow: false
         },
@@ -535,7 +535,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title15: The Elegan3b532532v52v5v32ce of Programming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["computer", "data"],
             editorAreaShow: false
         },
@@ -546,7 +546,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title16: The Elegance ofrnybwrtyvywretvw Volleyball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: [],
             editorAreaShow: false
         },
@@ -557,7 +557,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title17: The Elegance of Da3vt534v52ta",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["data", "computer", "technology"],
             editorAreaShow: false
         },
@@ -568,7 +568,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "This is a cool title",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["Rio", "2016", "Brazil"],
             editorAreaShow: false
         },
@@ -579,7 +579,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title9: ThThis is a cool titlee Elegance of264f642f6242f Cycling",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain", "speed"],
             editorAreaShow: false
         },
@@ -590,7 +590,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title10: The ElegThis is a cool titleance of Parg263g426g3462g432gkour",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["parkour", "dangerous"],
             editorAreaShow: false
         },
@@ -601,7 +601,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title11: The ElegThis is a cool titleance of Sg264g26g634g236g4326gkydiving",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["extreme", "helicopter", "sky", "cool"],
             editorAreaShow: false
         },
@@ -612,7 +612,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title12: The Eleganc2f3agdsgewwe64f26f436f2e of Surfing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["water", "match", "health"],
             editorAreaShow: false
         },
@@ -623,7 +623,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title13: The EThis is a cool titletcvfewrqfrqwcff Skiing",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["snow", "speed"],
             editorAreaShow: false
         },
@@ -634,7 +634,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title14: ThThis is a cool titletceqrvervqewrvof Hiking",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["mountain"],
             editorAreaShow: false
         },
@@ -645,7 +645,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title15: The EleganThis is a cool titlece of Programming",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["computer", "data"],
             editorAreaShow: false
         },
@@ -656,7 +656,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "Title16: The Elegance ofrnybwrtThis is a cool titleeyball",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: [],
             editorAreaShow: false
         },
@@ -667,7 +667,7 @@ export default {
             essayLength: "6 min read",
             thumbnailImgSrc: require("../assets/thumbnail.png"),
             essayTitle: "TitThis is a cool titlegance of Da3vt534v52ta",
-            aLinkText: "Read more...",
+            aLinkText: "Sports analytics is an interesting subject, according to 2019's computer science seminar, some placeholders...",
             tags: ["data", "computer", "technology"],
             editorAreaShow: false
         },

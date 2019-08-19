@@ -127,20 +127,28 @@ export default {
   height: 300px;
   margin: 10px;
   border-radius: 10px;
-  background-color: #a6a6a6;
   overflow: hidden;
   position: relative;
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
 }
 .tile:hover {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
 }
 .idBox {
   height: 20%;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: 0px;
+  color: white;
 }
 .imgBox {
-  width: 16%;
+  width: 20%;
   height: 100%;
-  padding-top: 4px;
+  padding-top: 6px;
+  padding-left: 6px;
   box-sizing: border-box;
   float: left;
 }
@@ -153,50 +161,65 @@ export default {
 }
 .nameBox {
   float: left;
-  width: 36%;
+  width: 40%;
   height: 100%;
   font-size: 18px;
   font-weight: bold;
-  line-height: 75px;
+  line-height: 65px;
   box-sizing: border-box;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 .dateBox {
-  width: 48%;
+  width: 40%;
   height: 100%;
   float: left;
-  padding-right: 5px;
-  padding-top: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
   box-sizing: border-box;
   text-align: right;
   font-size: 14px;
 }
 .thumbnailBox {
-  height: 45%;
+  height: 100%;
 }
 .thumbnailBox img {
   width: 100%;
   height: 100%;
 }
 .titleBox {
-  height: 25%;
+  height: 10%;
+  width: 100%;
   font-size: 18px;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 5px;
   box-sizing: border-box;
   font-weight: bold;
-  background-color: white;
   overflow: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: 20%;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
 }
 .titleBox a {
   font-weight: normal;
   font-size: 14px;
 }
+.tile:hover .titleBox {
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
 .tagBox {
   height: 10%;
+  width: 100%;
   box-sizing: border-box;
   padding-top: 4px;
   overflow: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: 2.5%;
 }
 .tagClass {
   float: right;
@@ -209,7 +232,7 @@ export default {
   font-size: 14px;
   line-height: 22px;
   color: white;
-  background-color: #363e4f;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .adminSection {
   position: absolute;
