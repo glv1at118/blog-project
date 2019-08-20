@@ -3,7 +3,7 @@
     <ul id="tileList">
       <li
         class="tile"
-        v-for="essay in essaysInGroup[pageMark-1]"
+        v-for="essay in essaysInGroup[$route.params.count-1]"
         v-bind:key="essay.essayTitle"
         v-on:mouseenter="handleMouseEnter(essay.essayTitle)"
         v-on:mouseleave="handleMouseLeave(essay.essayTitle)"
@@ -19,9 +19,7 @@
             {{essay.essayLength}}
           </div>
         </div>
-        <div class="thumbnailBox">
-          <img v-bind:src="essay.thumbnailImgSrc" alt="img n.a." />
-        </div>
+        <div class="thumbnailBox"></div>
         <div class="titleBox">
           {{essay.essayTitle}}
           <br />
@@ -58,7 +56,6 @@
 import { mapGetters, mapState } from "vuex";
 export default {
   name: "Tile",
-  props: ["pageMark"],
   computed: {
     ...mapGetters(["essaysInGroup"]),
     ...mapState(["isAuthorized", "editorMode"])
@@ -181,10 +178,16 @@ export default {
 }
 .thumbnailBox {
   height: 100%;
-}
-.thumbnailBox img {
   width: 100%;
-  height: 100%;
+  background-image: url("../assets/thumbnail.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in;
+}
+.tile:hover .thumbnailBox {
+  background-image: url("../assets/thumbnail2.png");
 }
 .titleBox {
   height: 10%;

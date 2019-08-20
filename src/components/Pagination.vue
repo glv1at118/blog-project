@@ -1,7 +1,7 @@
 <template>
   <div id="pageLayout">
     <Search></Search>
-    <router-view v-bind:pageMark="pageMark"></router-view>
+    <router-view></router-view>
     <div id="pageBox">
       <div id="goHead" class="operatorBtn" v-on:click="goHead">&lt;&lt;</div>
       <div id="goPrev" class="operatorBtn" v-on:click="goPrev">&lt;</div>
@@ -56,7 +56,7 @@ export default {
       if (this.pageMark === 1) {
         return;
       }
-      this.$router.push(`/1`);
+      this.$router.push(`/blog/1`);
       this.pageMark = 1;
       // move the pageList ul, default settings can display 4 paginations at maximum.
       if (this.pageNum <= 4) {
@@ -69,7 +69,7 @@ export default {
         return;
       }
       this.pageMark--;
-      this.$router.push(`/${this.pageMark}`);
+      this.$router.push(`/blog/${this.pageMark}`);
       // move the pageList ul, default settings can display 4 paginations at maximum.
       if (this.pageNum <= 4) {
         return;
@@ -85,7 +85,7 @@ export default {
         return;
       }
       this.pageMark++;
-      this.$router.push(`/${this.pageMark}`);
+      this.$router.push(`/blog/${this.pageMark}`);
       // move the pageList ul, default settings can display 4 paginations at maximum.
       if (this.pageNum <= 4) {
         return;
@@ -100,7 +100,7 @@ export default {
       if (this.pageMark === this.pageNum) {
         return;
       }
-      this.$router.push(`/${this.pageNum}`);
+      this.$router.push(`/blog/${this.pageNum}`);
       this.pageMark = this.pageNum;
       // move the pageList ul, default settings can display 4 paginations at maximum.
       if (this.pageNum <= 4) {
@@ -112,12 +112,13 @@ export default {
       if (this.pageMark === x) {
         return;
       }
-      this.$router.push(`/${x}`);
+      this.$router.push(`/blog/${x}`);
       this.pageMark = x;
     },
     updatePageMarkUponHashChange() {
       // when manually modify the url in the browser, updates the pageMark
-      this.pageMark = location.hash.substring(2);
+      // location.hash i.e.:  #/blog/20
+      this.pageMark = location.hash.substring(7);
     }
   }
 };

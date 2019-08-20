@@ -68,6 +68,9 @@ export default {
   beforeDestroy() {
     window.removeEventListener("resize", this.handleResize);
     window.removeEventListener("resize", this.adjustPagination);
+    // clear the timers before component is destroyed, to avoid "offsetLeft undefined" issues.
+    clearInterval(this.moveTimer);
+    clearInterval(this.waitTimer);
   },
   methods: {
     move() {

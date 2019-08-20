@@ -1,17 +1,34 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Tile from "../views/Tile";
+import Layout from "../views/Layout";
+import Editor from "../views/Editor";
+import Read from "../views/Read";
+import Tile from "../views/Tile"
 
 Vue.use(VueRouter);
 
 const routes = [
     {
-        path: "/:count",
-        component: Tile
+        path: "/blog",
+        component: Layout,
+        children: [
+            {
+                path: "/blog/:count",
+                component: Tile
+            }
+        ]
     },
     {
-        path: "/",
-        redirect: "/1"
+        path: "/editor",
+        component: Editor
+    },
+    {
+        path: "/read",
+        component: Read
+    },
+    {
+        path: "/*",
+        redirect: "/blog/1"
     }
 ];
 
