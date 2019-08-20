@@ -58,9 +58,12 @@
 
     <div ref="workarea" id="workarea"></div>
 
-    <button v-on:click="uploadDoc()" class="custom_btn">upload the doc to backend</button>
-    <button v-on:click="saveToDataAsTemp()" class="custom_btn">save the current doc to data</button>
-    <button v-on:click="retriveFromData()" class="custom_btn">retrive saved doc from data</button>
+    <button v-on:click="uploadDoc()" class="custom_btn">upload doc to backend</button>
+    <button v-on:click="saveToDataAsTemp()" class="custom_btn">save doc to local</button>
+    <button v-on:click="retriveFromData()" class="custom_btn">retrive last saved from local</button>
+    <button v-on:click="addTag()" class="custom_btn">add a tag</button>
+    <button v-on:click="deleteTag()" class="custom_btn">delete a tag</button>
+    <div id="tagDisplayArea">Tags: {{tagArray}}</div>
   </div>
 </template>
 
@@ -103,7 +106,9 @@ export default {
   name: "Editor",
   data: function() {
     return {
-      quillInstance: null
+      quillInstance: null,
+      tempDoc: "",
+      tagArray: []
     };
   },
   mounted: function() {
@@ -134,11 +139,6 @@ export default {
     });
     this.quillInstance = quill;
   },
-  data: function() {
-    return {
-      tempDoc: ""
-    };
-  },
   methods: {
     // addHr method is adapted from official document's solution
     addHr: function() {
@@ -153,13 +153,39 @@ export default {
       this.quillInstance.setSelection(range.index + 2, Quill.sources.SILENT);
     },
     uploadDoc: function() {
-      alert(this.$refs.workarea.children[0].innerHTML);
+      // [IMPORTANT NOTE: Server backend should inject the "tagArray" into the article object list]
+      alert(
+        "message from server: Article uploaded: " +
+          this.tempDoc +
+          "\n\nmessage from server: Article tags uploaded: " +
+          this.tagArray
+      );
     },
     saveToDataAsTemp: function() {
       this.tempDoc = this.$refs.workarea.children[0].innerHTML;
     },
     retriveFromData: function() {
       this.$refs.workarea.children[0].innerHTML = this.tempDoc;
+    },
+    addTag: function() {
+      let newTag = prompt("please add a custom tag").trim();
+      if (newTag === "") {
+        return;
+      }
+      for (let i = 0; i < this.tagArray.length; i++) {
+        if (newTag.toUpperCase() === this.tagArray[i].toUpperCase()) {
+          return;
+        }
+      }
+      this.tagArray.push(newTag);
+    },
+    deleteTag: function() {
+      let targetTag = prompt("type the tag you want to delete").trim();
+      let positionIndex = this.tagArray.indexOf(targetTag);
+      if (positionIndex === -1) {
+        return;
+      }
+      this.tagArray.splice(positionIndex, 1);
     }
   }
 };
@@ -173,11 +199,29 @@ export default {
 
 .custom_btn {
   float: left;
-  width: 33.33%;
+  width: 20%;
+}
+#tagDisplayArea {
+  width: 96%;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: 2px solid gray;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  overflow: auto;
 }
 #workarea .ql-editor {
   min-height: 400px;
-  height: 600px;
+  height: 550px;
   overflow-y: scroll;
   border: 2px solid gray;
   box-sizing: border-box;
