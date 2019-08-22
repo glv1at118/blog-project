@@ -1,9 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import state from "../vuex-store/state.js";
 import Layout from "../views/Layout";
 import Editor from "../views/Editor";
 import Read from "../views/Read";
-import Tile from "../views/Tile"
+import Tile from "../views/Tile";
 
 Vue.use(VueRouter);
 
@@ -20,10 +21,18 @@ const routes = [
     },
     {
         path: "/editor",
-        component: Editor
+        component: Editor,
+        // A vue-router navigation guard for the route (per-route)
+        beforeEnter: (to, from, next) => {
+            if (state.isAuthorized) {
+                next();
+            } else {
+                next(false);
+            }
+        }
     },
     {
-        path: "/read",
+        path: "/read/:essayTitle",
         component: Read
     },
     {

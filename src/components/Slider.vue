@@ -23,8 +23,8 @@
         <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
       </li>
     </ul>
-    <div id="btn_previous" v-on:click="goPrevious">&lt;</div>
-    <div id="btn_next" v-on:click="goNext">&gt;</div>
+    <div id="btn_previous" v-on:click="goPrevious"></div>
+    <div id="btn_next" v-on:click="goNext"></div>
     <div id="pagination_box" ref="pagination_box">
       <ul>
         <li v-for="x in num" v-bind:key="x" v-bind:class="['dot', x===i? 'dot-active': '']"></li>
@@ -171,6 +171,17 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/fonts/icomoon.eot?v7aonl");
+  src: url("../assets/fonts/icomoon.eot?v7aonl#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/icomoon.ttf?v7aonl") format("truetype"),
+    url("../assets/fonts/icomoon.woff?v7aonl") format("woff"),
+    url("../assets/fonts/icomoon.svg?v7aonl#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 #sliderContainer {
   /* background-color: #f15b24; */
   width: 100%;
@@ -212,11 +223,12 @@ export default {
   height: 50px;
   font-size: 30px;
   text-align: center;
-  line-height: 42px;
+  line-height: 50px;
   top: 150px;
   cursor: pointer;
   user-select: none;
   border-radius: 50%;
+  font-family: "icomoon";
 }
 #btn_previous {
   left: 40px;

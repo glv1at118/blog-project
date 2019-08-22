@@ -60,7 +60,7 @@
 
     <button v-on:click="uploadDoc()" class="custom_btn">upload doc to backend</button>
     <button v-on:click="saveToDataAsTemp()" class="custom_btn">save doc to local</button>
-    <button v-on:click="retriveFromData()" class="custom_btn">retrive last saved from local</button>
+    <button v-on:click="retriveFromData()" class="custom_btn">retrive saved doc from local</button>
     <button v-on:click="addTag()" class="custom_btn">add a tag</button>
     <button v-on:click="deleteTag()" class="custom_btn">delete a tag</button>
     <div id="tagDisplayArea">Tags: {{tagArray}}</div>
@@ -154,6 +154,7 @@ export default {
     },
     uploadDoc: function() {
       // [IMPORTANT NOTE: Server backend should inject the "tagArray" into the article object list]
+      console.log(this.tempDoc);
       alert(
         "message from server: Article uploaded: " +
           this.tempDoc +
@@ -163,15 +164,22 @@ export default {
     },
     saveToDataAsTemp: function() {
       this.tempDoc = this.$refs.workarea.children[0].innerHTML;
+      alert("document content saved successfully to local data");
     },
     retriveFromData: function() {
-      this.$refs.workarea.children[0].innerHTML = this.tempDoc;
+      let decision = confirm(
+        "the saved document from local data will OVERWRITE the current working content, are you sure?"
+      );
+      if (decision) {
+        this.$refs.workarea.children[0].innerHTML = this.tempDoc;
+      }
     },
     addTag: function() {
-      let newTag = prompt("please add a custom tag").trim();
-      if (newTag === "") {
+      let newTag = prompt("please add a custom tag");
+      if (newTag === "" || newTag === null) {
         return;
       }
+      newTag = newTag.trim();
       for (let i = 0; i < this.tagArray.length; i++) {
         if (newTag.toUpperCase() === this.tagArray[i].toUpperCase()) {
           return;
@@ -200,13 +208,16 @@ export default {
 .custom_btn {
   float: left;
   width: 20%;
+  height: 30px;
+  outline: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
 }
 #tagDisplayArea {
-  width: 96%;
+  width: 100%;
   height: 100px;
   margin-top: 30px;
-  margin-left: 2%;
-  margin-right: 2%;
   border: 2px solid gray;
   background-color: black;
   color: white;
@@ -222,20 +233,17 @@ export default {
 #workarea .ql-editor {
   min-height: 400px;
   height: 550px;
-  overflow-y: scroll;
+  overflow-y: auto;
   border: 2px solid gray;
   box-sizing: border-box;
 }
-
 /* Code below is to set drop-down list font family. Source: [Official Doc Playground] */
 #toolbar-container .ql-font span[data-label="Sans Serif"]::before {
   font-family: "Sans Serif";
 }
-
 #toolbar-container .ql-font span[data-label="Quicksand"]::before {
   font-family: "Quicksand";
 }
-
 #toolbar-container .ql-font span[data-label="Times"]::before {
   font-family: "Times";
 }
@@ -243,40 +251,31 @@ export default {
 .ql-font-quicksand {
   font-family: "Quicksand";
 }
-
 .ql-font-times {
   font-family: "Times";
 }
-
 /* code below is to set font-size in specific numbers */
 .ql-picker.ql-size .ql-picker-item[data-value="14px"]::before {
   font-size: 14px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="16px"]::before {
   font-size: 16px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="18px"]::before {
   font-size: 18px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="20px"]::before {
   font-size: 20px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="22px"]::before {
   font-size: 22px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="24px"]::before {
   font-size: 24px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="26px"]::before {
   font-size: 26px !important;
 }
-
 .ql-picker.ql-size .ql-picker-item[data-value="28px"]::before {
   font-size: 28px !important;
 }

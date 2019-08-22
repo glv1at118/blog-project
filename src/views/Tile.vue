@@ -23,7 +23,7 @@
         <div class="titleBox">
           {{essay.essayTitle}}
           <br />
-          <a href="#">{{essay.aLinkText}}</a>
+          <router-link v-bind:to="`/read/${essay.essayTitle}`">{{essay.aLinkText}}</router-link>
         </div>
         <div class="tagBox">
           <div class="tagClass" v-for="tag in essay.tags" v-bind:key="tag">{{tag}}</div>
