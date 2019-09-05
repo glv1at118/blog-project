@@ -42,6 +42,7 @@ export default {
   bottom: 20px;
   left: 30px;
   z-index: 100;
+  background-color: white;
   transition-property: all;
   transition-duration: 700ms;
   transition-timing-function: ease-in-out;

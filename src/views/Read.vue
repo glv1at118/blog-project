@@ -15,31 +15,76 @@
       </section>
       <section id="articleBody">
         <h1>{{$route.params.essayTitle}}</h1>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
         <h3>Sample Blog Article Sub Title 1</h3>
-        <p>Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.</p>
+        <p>
+          Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article
+          text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this
+          is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text. Sample blog article text, this is some text.
+          Sample blog article text, this is some text. Sample blog article text, this is some text.
+        </p>
         <br />
       </section>
       <section id="tagArea">
@@ -61,163 +106,73 @@
               <img src="../assets/head.png" alt="avatar not available" />
             </div>
             <div>Reader Name</div>
-            <button>Publish</button>
+            <button v-on:click="publishComment">Publish</button>
           </div>
-          <textarea id="contentArea" placeholder="please leave a comment"></textarea>
+          <textarea id="contentArea" placeholder="please leave a comment" v-model="userInput"></textarea>
         </div>
 
-        <div id="commentList">
-          <div class="comment">
-            <div class="nameArea">
-              <div>
-                <img src="../assets/head.png" alt="avatar not available" />
-              </div>
-              <div>Reader Name</div>
-              <div>August 22, 2019, 4:30PM</div>
-            </div>
-            <div
-              class="thread"
-            >A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment.</div>
-            <div class="interactBtns">
-              <div class="share"></div>
-              <div class="reply"></div>
-              <div class="dislike"></div>
-              <div class="like"></div>
-            </div>
-          </div>
+        <div
+          id="commentListTrigger"
+          v-on:click="listTrigger"
+        >{{triggerText}} ({{articleCommentList().length}})</div>
 
-          <div class="comment">
+        <ul id="commentList" v-show="showCommentList">
+          <li
+            class="comment"
+            v-for="(userComment, index) in articleCommentList()"
+            v-bind:key="index"
+          >
             <div class="nameArea">
               <div>
                 <img src="../assets/head.png" alt="avatar not available" />
               </div>
-              <div>Reader Name</div>
-              <div>August 22, 2019, 4:30PM</div>
+              <div>{{userComment.readerName}}</div>
+              <div>{{userComment.threadTime}}</div>
             </div>
-            <div
-              class="thread"
-            >A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment.</div>
+            <div class="thread">{{userComment.content}}</div>
             <div class="interactBtns">
-              <div class="share"></div>
-              <div class="reply"></div>
-              <div class="dislike"></div>
-              <div class="like"></div>
+              <div class="shareNumber">{{userComment.shares}}</div>
+              <div class="share" v-on:click="doShare(index)"></div>
+              <div class="replyNumber">{{userComment.replies}}</div>
+              <div class="reply" v-on:click="doReply(index)"></div>
+              <div class="likeNumber">{{userComment.likes}}</div>
+              <div class="like" v-on:click="doLike(index)"></div>
             </div>
-          </div>
-
-          <div class="comment">
-            <div class="nameArea">
-              <div>
-                <img src="../assets/head.png" alt="avatar not available" />
-              </div>
-              <div>Reader Name</div>
-              <div>August 22, 2019, 4:30PM</div>
-            </div>
-            <div
-              class="thread"
-            >A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment.</div>
-            <div class="interactBtns">
-              <div class="share"></div>
-              <div class="reply"></div>
-              <div class="dislike"></div>
-              <div class="like"></div>
-            </div>
-          </div>
-
-          <div class="comment">
-            <div class="nameArea">
-              <div>
-                <img src="../assets/head.png" alt="avatar not available" />
-              </div>
-              <div>Reader Name</div>
-              <div>August 22, 2019, 4:30PM</div>
-            </div>
-            <div
-              class="thread"
-            >A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment. A sample line of comment.</div>
-            <div class="interactBtns">
-              <div class="share"></div>
-              <div class="reply"></div>
-              <div class="dislike"></div>
-              <div class="like"></div>
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
     </div>
+
+    <hr class="customHr" />
+
     <section id="recommendations">
       <h2>More From Torneo</h2>
-      <ul>
-        <li class="tile">
-          <div class="idBox">
-            <div class="imgBox">
-              <img src="../assets/head.png" alt="img n.a." />
+      <ul id="recommendList">
+        <li class="recommendItem" v-for="(articleId, index) in recommendedIndex" v-bind:key="index">
+          <div class="recommendTitle">{{essays[articleId].essayTitle}}</div>
+          <div class="recommendBrief">
+            <a href="#">{{essays[articleId].aLinkText}}</a>
+          </div>
+          <div class="authorBox">
+            <div class="authorAvatarBox">
+              <img v-bind:src="essays[articleId].headImgSrc" alt="avatar not available" />
             </div>
-            <div class="nameBox">Author Name</div>
-            <div class="dateBox">
-              Sept 2, 2019
-              <br />5 mins read
+            <div class="infoBox">
+              <div class="nameBox">{{essays[articleId].author}}</div>
+              <div class="timeBox">{{essays[articleId].essayLength}}, {{essays[articleId].dateInfo}}</div>
             </div>
-          </div>
-          <div class="thumbnailBox"></div>
-          <div class="titleBox">
-            Article Title
-            <br />
-            <a href="#">Article sample brief text</a>
-          </div>
-          <div class="tagBox">
-            <div class="tagClass">tag</div>
-          </div>
-        </li>
-        <li class="tile">
-          <div class="idBox">
-            <div class="imgBox">
-              <img src="../assets/head.png" alt="img n.a." />
-            </div>
-            <div class="nameBox">Author Name</div>
-            <div class="dateBox">
-              Sept 2, 2019
-              <br />5 mins read
-            </div>
-          </div>
-          <div class="thumbnailBox"></div>
-          <div class="titleBox">
-            Article Title
-            <br />
-            <a href="#">Article sample brief text</a>
-          </div>
-          <div class="tagBox">
-            <div class="tagClass">tag</div>
-          </div>
-        </li>
-        <li class="tile">
-          <div class="idBox">
-            <div class="imgBox">
-              <img src="../assets/head.png" alt="img n.a." />
-            </div>
-            <div class="nameBox">Author Name</div>
-            <div class="dateBox">
-              Sept 2, 2019
-              <br />5 mins read
-            </div>
-          </div>
-          <div class="thumbnailBox"></div>
-          <div class="titleBox">
-            Article Title
-            <br />
-            <a href="#">Article sample brief text</a>
-          </div>
-          <div class="tagBox">
-            <div class="tagClass">tag</div>
           </div>
         </li>
       </ul>
     </section>
+
+    <GoTop></GoTop>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
+import GoTop from "../components/GoTop";
 import Navigation from "../components/Navigation";
 import ShareSocial from "../components/ShareSocial";
 import Footer from "../components/Footer";
@@ -227,10 +182,18 @@ export default {
   components: {
     Navigation,
     ShareSocial,
-    Footer
+    Footer,
+    GoTop
+  },
+  data() {
+    return {
+      userInput: "",
+      showCommentList: false,
+      triggerText: "Click to See All Responses"
+    };
   },
   computed: {
-    ...mapState(["essays"]),
+    ...mapState(["essays", "recommendedIndex"]),
     articleTag() {
       let tags = [];
       let articleTitle = this.$route.params.essayTitle;
@@ -241,6 +204,135 @@ export default {
         }
       }
       return tags;
+    }
+  },
+  methods: {
+    articleCommentList() {
+      for (let i = 0; i < this.essays.length; i++) {
+        if (this.essays[i].essayTitle === this.$route.params.essayTitle) {
+          return this.essays[i].commentList;
+        }
+      }
+    },
+    publishComment() {
+      if (this.userInput === "") {
+        return;
+      }
+      let d = new Date();
+      let day = d.getDate();
+      let month = d.getMonth() + 1;
+      let year = d.getFullYear();
+      let hour = d.getHours();
+      let minute = d.getMinutes();
+      let section = "";
+      if (hour >= 0 && hour <= 11) {
+        section = "AM";
+      } else {
+        section = "PM";
+      }
+      let mutatedHour = hour >= 0 && hour <= 11 ? hour : hour - 12;
+      let mutatedMonth = "";
+      switch (month) {
+        case 1:
+          mutatedMonth = "January";
+          break;
+        case 2:
+          mutatedMonth = "February";
+          break;
+        case 3:
+          mutatedMonth = "March";
+          break;
+        case 4:
+          mutatedMonth = "April";
+          break;
+        case 5:
+          mutatedMonth = "May";
+          break;
+        case 6:
+          mutatedMonth = "June";
+          break;
+        case 7:
+          mutatedMonth = "July";
+          break;
+        case 8:
+          mutatedMonth = "August";
+          break;
+        case 9:
+          mutatedMonth = "September";
+          break;
+        case 10:
+          mutatedMonth = "October";
+          break;
+        case 11:
+          mutatedMonth = "November";
+          break;
+        case 12:
+          mutatedMonth = "December";
+          break;
+        default:
+          break;
+      }
+
+      // i.e. August 01, 2019, 4:30PM
+      let timeStr =
+        mutatedMonth +
+        " " +
+        day +
+        ", " +
+        year +
+        ", " +
+        mutatedHour +
+        ":" +
+        minute +
+        section;
+
+      let payload = {
+        essayTitle: this.$route.params.essayTitle,
+        comment: {
+          readerName: "User Name X",
+          threadTime: timeStr,
+          content: this.userInput,
+          likes: 0,
+          replies: 0,
+          shares: 0
+        }
+      };
+      this.$store.commit("addComment", payload);
+      this.userInput = "";
+    },
+    doShare(index) {
+      // some backend logic here...
+      console.log("This comment tread has been shared!");
+      let payload = {
+        essayTitle: this.$route.params.essayTitle,
+        index: index,
+        category: "shares"
+      };
+      this.$store.commit("increaseSum", payload);
+    },
+    doLike(index) {
+      let payload = {
+        essayTitle: this.$route.params.essayTitle,
+        index: index,
+        category: "likes"
+      };
+      this.$store.commit("increaseSum", payload);
+    },
+    doReply(index) {
+      let payload = {
+        essayTitle: this.$route.params.essayTitle,
+        index: index,
+        category: "replies"
+      };
+      this.$store.commit("increaseSum", payload);
+    },
+    listTrigger() {
+      this.showCommentList = !this.showCommentList;
+      if (this.showCommentList) {
+        this.triggerText = "Click to Hide All Responses";
+      } else {
+        this.triggerText = "Click to See All Responses";
+      }
     }
   }
 };
@@ -273,6 +365,7 @@ export default {
   top: 0;
   padding: 150px 70px 30px 70px;
   box-sizing: border-box;
+  font-family: Quicksand;
 }
 #authorHeading {
   width: 90%;
@@ -320,6 +413,8 @@ export default {
   margin-bottom: 5px;
   /* border-radius: 15px; */
   box-sizing: border-box;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 #authorBio {
   width: 100%;
@@ -340,6 +435,7 @@ export default {
   height: 100px;
   box-sizing: border-box;
   border-radius: 50%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #authorName {
   height: 40%;
@@ -366,7 +462,6 @@ export default {
   border: none;
   border-bottom: 1px solid gray;
 }
-
 #commentArea {
   width: 100%;
   font-family: "Quicksand";
@@ -400,8 +495,20 @@ export default {
   width: 100px;
   /* border-radius: 25px; */
   font-size: 20px;
-  font-weight: bold;
   float: right;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+}
+#commentAdd .nameArea button:hover {
+  color: #f15b24;
+  font-weight: bold;
+}
+#commentAdd .nameArea button:active {
+  color: #f15b24;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 #commentAdd #contentArea {
   box-sizing: border-box;
@@ -410,21 +517,41 @@ export default {
   margin-top: 20px;
   /* border-radius: 10px; */
   font-size: 20px;
-  padding: 10px;
+  padding: 20px;
   resize: none;
 }
 #commentAdd #contentArea:focus {
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
   border: 1px solid #363e4f;
 }
+#commentListTrigger {
+  width: 100%;
+  height: 40px;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  font-style: oblique;
+  cursor: pointer;
+  user-select: none;
+}
+#commentListTrigger:hover {
+  color: #f15b24;
+  font-weight: bold;
+}
+#commentListTrigger:active {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
 #commentList {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #commentList .comment {
   box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  padding: 30px 30px 10px 30px;
+  padding: 30px 30px 30px 30px;
   margin-bottom: 20px;
   /* border-radius: 10px; */
 }
@@ -467,7 +594,6 @@ export default {
   margin-top: 20px;
 }
 #commentList .interactBtns .like,
-#commentList .interactBtns .dislike,
 #commentList .interactBtns .reply,
 #commentList .interactBtns .share {
   float: right;
@@ -475,7 +601,7 @@ export default {
   height: 30px;
   font-size: 20px;
   box-sizing: border-box;
-  margin-left: 100px;
+  margin-left: 50px;
   font-family: "icomoon";
   text-align: center;
   line-height: 30px;
@@ -483,146 +609,143 @@ export default {
   user-select: none;
 }
 #commentList .interactBtns .like:hover,
-#commentList .interactBtns .dislike:hover,
 #commentList .interactBtns .reply:hover,
 #commentList .interactBtns .share:hover {
   color: #f15b24;
 }
-#recommendations ul {
-  height: 350px;
-  width: 86%;
+#commentList .interactBtns .likeNumber,
+#commentList .interactBtns .replyNumber,
+#commentList .interactBtns .shareNumber {
+  float: right;
+  width: 50px;
+  height: 30px;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: "Quicksand";
+  text-align: center;
+  line-height: 30px;
+}
+.customHr {
+  width: 80%;
   position: relative;
-  left: 7%;
-  display: flex;
-  justify-content: space-around;
+  left: 10%;
+}
+#recommendations {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  font-family: "Quicksand";
+  margin-top: 20px;
 }
 #recommendations h2 {
+  font-size: 26px;
+  font-style: oblique;
   height: 50px;
-  width: 86%;
-  position: relative;
-  left: 7%;
-  line-height: 50px;
-  text-align: center;
-}
-/*-----------------------------------*/
-.tile {
-  width: 400px;
-  min-width: 400px;
-  height: 300px;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-  float: left;
-  transition-duration: 100ms;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-}
-.tile:hover {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
-}
-.idBox {
-  height: 20%;
-  width: 100%;
-  position: absolute;
-  top: 5%;
-  left: 0px;
-  color: white;
-}
-.imgBox {
-  width: 20%;
-  height: 100%;
-  padding-top: 6px;
-  padding-left: 6px;
-  box-sizing: border-box;
-  float: left;
-}
-.imgBox img {
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-.nameBox {
-  float: left;
-  width: 40%;
-  height: 100%;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 65px;
+  text-decoration: underline;
   box-sizing: border-box;
   padding-left: 10px;
 }
-.dateBox {
-  width: 40%;
-  height: 100%;
+#recommendList {
+  width: 100%;
+  height: 500px;
+}
+.recommendItem {
+  width: 49%;
+  height: 230px;
   float: left;
-  padding-right: 20px;
-  padding-top: 15px;
   box-sizing: border-box;
-  text-align: right;
-  font-size: 14px;
-}
-.thumbnailBox {
-  height: 100%;
-  width: 100%;
-  /* you can put here a background-image instead of background-color */
-  background-size: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  /* background-image: url("xxxxx"); */
   background-repeat: no-repeat;
-  transition-duration: 200ms;
-  transition-property: all;
-  transition-timing-function: ease-in;
-}
-.tile:hover .thumbnailBox {
-  /* you can put here a background-image instead of background-color */
-}
-.titleBox {
-  height: 10%;
-  width: 100%;
-  font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 5px;
-  box-sizing: border-box;
-  font-weight: bold;
-  overflow: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: 20%;
-  transition-duration: 200ms;
+  background-size: cover;
+  cursor: pointer;
+  user-select: none;
   transition-property: all;
   transition-timing-function: ease-in-out;
+  transition-duration: 100ms;
 }
-.titleBox a {
-  font-weight: normal;
-  font-size: 14px;
+.recommendItem:hover {
+  box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.3);
 }
-.tile:hover .titleBox {
-  height: 35%;
-  background-color: rgba(255, 255, 255, 0.3);
+.recommendItem:active {
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
 }
-.tagBox {
-  height: 10%;
+.recommendItem:nth-child(odd) {
+  margin-right: 1%;
+}
+.recommendItem:nth-child(even) {
+  margin-left: 1%;
+}
+.recommendTitle {
   width: 100%;
+  height: 72px;
+  font-size: 22px;
+  font-weight: bold;
   box-sizing: border-box;
-  padding-top: 4px;
+  padding: 10px 20px 10px 20px;
   overflow: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: 2.5%;
 }
-.tagClass {
-  float: right;
-  padding: 0 5px 0 5px;
-  height: 22px;
-  border-radius: 5px;
-  margin-right: 5px;
-  margin-bottom: 4px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 22px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.3);
+.recommendBrief {
+  width: 100%;
+  height: 72px;
+  box-sizing: border-box;
+  padding: 10px 20px 10px 20px;
+  font-style: oblique;
+  overflow: hidden;
+  position: relative;
+}
+.recommendBrief a {
+  color: black;
+}
+.recommendBrief a:hover {
+  color: #f15b24;
+  font-weight: bold;
+}
+.authorBox {
+  width: 100%;
+  height: 72px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.authorAvatarBox {
+  width: 72px;
+  height: 72px;
+  float: left;
+  box-sizing: border-box;
+}
+.authorAvatarBox img {
+  width: 66px;
+  height: 66px;
+  margin: 3px auto 3px 0px;
+  border-radius: 50%;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.recommendItem:hover img {
+  transform: rotate(360deg);
+}
+.infoBox {
+  height: 72px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+.nameBox {
+  height: 36px;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 36px;
+}
+.timeBox {
+  height: 36px;
+  box-sizing: border-box;
+  font-style: oblique;
+  line-height: 36px;
 }
 </style>
+
+
+

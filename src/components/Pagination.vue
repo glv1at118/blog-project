@@ -140,7 +140,7 @@ export default {
   font-size: 20px;
   font-family: Quicksand;
   user-select: none;
-  border-bottom: 1px solid #363e4f;
+  border-bottom: 1px dashed #363e4f;
 }
 #pageListFrame {
   height: 100%;

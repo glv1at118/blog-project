@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div id="goTop" v-on:click="returnPageTop" v-show="showGoTop"></div>
+    <div id="goTop" v-on:click="returnPageTop" v-show="showGoTop"></div>
   </transition>
 </template>
 
@@ -33,8 +33,13 @@ export default {
       let scrollTop = document.documentElement.scrollTop;
       let scrollHeight = document.documentElement.scrollHeight;
       let clientHeight = document.documentElement.clientHeight;
-      if (scrollHeight === scrollTop + clientHeight) {
-        // scroll bar has reached page bottom
+      if (
+        scrollTop + clientHeight >= scrollHeight - 100 &&
+        scrollTop + clientHeight <= scrollHeight + 5
+      ) {
+        // scroll bar has reached "close" to page bottom
+        // this is to control the javascript calculation imprecision problem
+        // rather than using "scrollTop + clientHeight === scrollHeight" condition
         this.showGoTop = true;
       } else {
         this.showGoTop = false;
@@ -60,24 +65,24 @@ export default {
 #goTop {
   width: 40px;
   height: 40px;
-  background-color: #0e71a3;
+  background-color: rgb(14, 113, 163, 0.5);
   position: fixed;
   bottom: 150px;
   right: 40px;
   text-align: center;
   line-height: 40px;
   font-family: "icomoon";
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   cursor: pointer;
   user-select: none;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.2);
   transition-property: all;
   transition-timing-function: ease-in-out;
   transition-duration: 300ms;
 }
 #goTop:hover {
-  background-color: #363e4f;
+  background-color: rgb(54, 62, 79, 0.5);
 }
 .fade-enter-active,
 .fade-leave-active {

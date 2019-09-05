@@ -14,12 +14,12 @@ export default {
 /* invoke the font styles, all sub-components will be able to use */
 @font-face {
   font-family: "icomoon";
-  src: url("./assets/fonts/icomoon.eot?e1k18k");
-  src: url("./assets/fonts/icomoon.eot?e1k18k#iefix")
+  src: url("./assets/fonts/icomoon.eot?v5abi8");
+  src: url("./assets/fonts/icomoon.eot?v5abi8#iefix")
       format("embedded-opentype"),
-    url("./assets/fonts/icomoon.ttf?e1k18k") format("truetype"),
-    url("./assets/fonts/icomoon.woff?e1k18k") format("woff"),
-    url("./assets/fonts/icomoon.svg?e1k18k#icomoon") format("svg");
+    url("./assets/fonts/icomoon.ttf?v5abi8") format("truetype"),
+    url("./assets/fonts/icomoon.woff?v5abi8") format("woff"),
+    url("./assets/fonts/icomoon.svg?v5abi8#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

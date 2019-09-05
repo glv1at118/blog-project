@@ -48,5 +48,23 @@ export default {
     },
     toggleEditorMode(state) {
         state.editorMode = !state.editorMode;
+    },
+    addComment(state, payload) {
+        for (let x = 0; x < state.essays.length; x++) {
+            if (state.essays[x].essayTitle === payload.essayTitle) {
+                state.essays[x].commentList.unshift(payload.comment);
+                break;
+            }
+        }
+    },
+    increaseSum(state, payload) {
+        // @params:
+        // category can be "likes"/"shares"/"replies"
+        for (let x = 0; x < state.essays.length; x++) {
+            if (state.essays[x].essayTitle === payload.essayTitle) {
+                state.essays[x].commentList[payload.index][payload.category]++
+                break;
+            }
+        }
     }
 }
