@@ -1,41 +1,32 @@
 <template>
   <div id="search">
+    <div id="searchIcon" v-on:click="expandInputBar"></div>
     <input
       type="text"
-      v-bind:placeholder="placeHolderText"
-      v-on:input="uploadQueryWord"
       ref="word"
+      v-on:blur="handleBlur"
       v-on:focus="toggleFocus"
-      v-on:blur="toggleFocus"
+      v-on:keyup.38="switchToTitle"
+      v-on:keyup.40="switchToTag"
+      v-on:input="uploadQueryWord"
+      v-bind:class="[expand? 'input-active': '']"
+      v-bind:placeholder="placeHolderText"
     />
-    <div
-      id="searchTagBtn"
-      v-on:click="switchToTag"
-      v-bind:class="[option==='tag'?'optionActive':'']"
-    >Tag</div>
-    <div
-      id="searchTitleBtn"
-      v-on:click="switchToTitle"
-      v-bind:class="[option==='title'?'optionActive':'']"
-    >Title</div>
     <div id="resultBox" v-show="display">
-      <ul id="resultList" ref="resultList">
-        <li class="result" v-for="essay in filteredEssays" v-bind:key="essay.essayTitle">
-          <div class="container1">
-            <div class="nameBox">{{essay.author}}</div>
-            <div class="dateBox">{{essay.dateInfo}}</div>
+      <ul>
+        <li v-for="essay in filteredEssays" v-bind:key="essay.essayTitle">
+          <div class="titleBox">{{essay.essayTitle}}</div>
+          <div class="briefBox">
+            <a href="#">{{essay.aLinkText}}</a>
           </div>
-          <div class="container2">
-            <div class="titleBox">
-              <a href="#">{{essay.essayTitle}}</a>
-            </div>
-            <div class="tagBox">
-              <div class="tagLabel" v-for="tag in essay.tags" v-bind:key="tag">{{tag}}</div>
-            </div>
+          <div class="tagBox">
+            <div v-for="tag in essay.tags" v-bind:key="tag">{{tag}}</div>
           </div>
         </li>
       </ul>
+      <div id="noMatch" v-show="noMatch">No Matched Content</div>
     </div>
+    <div id="arrowBox" v-show="display"></div>
   </div>
 </template>
 
@@ -45,15 +36,17 @@ export default {
   name: "Search",
   data() {
     return {
-      option: "title", // option can either be "title" or "tag", default is "title"
-      isFocused: false
+      expand: false,
+      option: "title", // option can be "title" or "tag"
+      isFocused: false,
+      noMatch: false
     };
   },
   computed: {
     placeHolderText() {
       return this.option === "title"
-        ? "search blog by article titles..."
-        : "search blog by article tags...";
+        ? "search titles (arrow up/down)"
+        : "search tags (arrow up/down)";
     },
     ...mapState(["queryWord"]),
     ...mapGetters(["filteredEssays"]),
@@ -65,6 +58,13 @@ export default {
     }
   },
   methods: {
+    expandInputBar() {
+      this.expand = true;
+      this.$refs.word.focus();
+    },
+    contractInputBar() {
+      this.expand = false;
+    },
     switchToTitle() {
       if (this.option === "title") {
         return;
@@ -92,35 +92,21 @@ export default {
         queryContent: wordVal
       });
     },
-    // this method sets the border bottom left and right radius of the input element
-    setInputBorderStyle(radius) {
-      this.$refs.word.style.borderBottomLeftRadius = radius + "px";
-      this.$refs.word.style.borderBottomRightRadius = radius + "px";
-    },
     toggleFocus() {
       this.isFocused = !this.isFocused;
-      if (!this.isFocused) {
-        this.setInputBorderStyle(25);
-      } else {
-        if (this.queryWord.queryContent === "") {
-          this.setInputBorderStyle(25);
-        } else {
-          this.setInputBorderStyle(0);
-        }
-      }
+    },
+    handleBlur() {
+      this.contractInputBar();
+      this.toggleFocus();
     }
   },
   watch: {
-    // deep watch on the query content. Based on this and set the input border bottom styles
-    queryWord: {
-      handler(newVal) {
-        if (newVal.queryContent === "") {
-          this.setInputBorderStyle(25);
-        } else {
-          this.setInputBorderStyle(0);
-        }
-      },
-      deep: true
+    filteredEssays(newVal) {
+      if (newVal.length === 0) {
+        this.noMatch = true;
+      } else {
+        this.noMatch = false;
+      }
     }
   }
 };
@@ -128,186 +114,105 @@ export default {
 
 <style scoped>
 #search {
-  font-family: Quicksand;
-  width: 90%;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  background-color: white;
+  height: 30px;
+  float: right;
+  margin-top: 9px;
+  margin-right: 20px;
+  color: black;
   position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+#searchIcon {
+  font-family: "icomoon";
+  float: left;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
 }
 input {
-  outline: none;
-  height: 100%;
   float: left;
-  box-sizing: border-box;
-  width: 70%;
-  font-size: 24px;
-  padding-left: 20px;
-  border: 1px solid gray;
-  border-radius: 25px;
+  border: none;
+  height: 30px;
+  width: 0px;
+  font-family: "Quicksand";
+  font-size: 16px;
+  line-height: 30px;
+  padding-left: 5px;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
 }
-input:focus {
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
-}
-div #searchTitleBtn,
-div #searchTagBtn {
-  float: right;
-  width: 10%;
-  height: 100%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 24px;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-weight: bold;
-  user-select: none;
-}
-#searchTitleBtn {
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  margin-right: 1px;
-  background-color: #999999;
-  box-sizing: border-box;
-}
-#searchTitleBtn:hover {
-  background-color: #f15b24;
-  color: white;
-}
-#searchTitleBtn:active {
-  background-color: #363e4f;
-  color: white;
-}
-#searchTagBtn {
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-left: 1px;
-  background-color: #999999;
-  box-sizing: border-box;
-}
-#searchTagBtn:hover {
-  background-color: #f15b24;
-  color: white;
-}
-#searchTagBtn:active {
-  background-color: #363e4f;
-  color: white;
-}
-.optionActive {
-  background-color: #363e4f !important;
-  color: white !important;
-  border: 2px solid #f15b24;
+.input-active {
+  width: 265px !important;
 }
 #resultBox {
-  position: absolute;
-  width: 70%;
-  max-height: 400px;
-  left: 0;
-  top: 50px;
-  box-sizing: border-box;
-  border: 1px solid gray;
-  border-top: none;
-  z-index: 20;
-  overflow: auto;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   background-color: white;
-  text-align: center;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #d9d9d9;
-  border-radius: 5px;
-}
-::-webkit-scrollbar-thumb:active {
-  background-color: #808080;
-}
-#resultList {
-  width: 100%;
-  padding: 2px;
+  width: 300px;
+  max-height: 376px;
+  position: absolute;
+  top: 40px;
+  left: 0px;
   box-sizing: border-box;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  font-family: "Quicksand";
+  overflow-y: auto;
+  overflow-x: hidden;
 }
-.result {
-  width: 100%;
-  height: 100px;
-  position: relative;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-  box-sizing: border-box;
-  border: 1px solid gray;
-}
-.container1 {
-  height: 100%;
-  width: 25%;
-  float: left;
-}
-.container1 .nameBox {
-  background-color: #363e4f;
-  width: 100%;
-  height: 70%;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 70px;
-  color: white;
-  box-sizing: border-box;
-}
-.container1 .dateBox {
-  background-color: #d1d6e0;
-  width: 100%;
-  height: 30%;
-  line-height: 30px;
-  box-sizing: border-box;
-  margin-right: 1px;
+#noMatch {
+  padding: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
   font-weight: bold;
 }
-.container2 {
-  height: 100%;
-  width: 75%;
-  float: left;
-}
-.container2 .titleBox {
-  background-color: #363e4f;
-  width: 100%;
-  height: 70%;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
-  text-align: left;
+#resultBox li {
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  padding: 5px;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-top: 10px;
-  overflow: auto;
-  color: white;
-  margin-left: 1px;
+  margin-bottom: 5px;
 }
-.container2 .titleBox a {
-  color: white;
+#resultBox li a {
+  color: black;
+  font-style: oblique;
 }
-.container2 .titleBox a:hover {
+#resultBox li a:hover {
   color: #f15b24;
-  text-decoration: underline;
 }
-.container2 .tagBox {
-  background-color: #d1d6e0;
-  width: 100%;
-  height: 30%;
-  box-sizing: border-box;
-  margin-left: 1px;
-}
-.container2 .tagBox .tagLabel {
-  background-color: #0e71a3;
-  float: right;
-  height: 26px;
-  padding: 0 5px 0 5px;
-  line-height: 30px;
+.titleBox {
   font-weight: bold;
-  margin-right: 5px;
-  margin-top: 2px;
-  border-radius: 10px;
+  color: #363e4f;
+  margin-bottom: 5px;
+}
+.briefBox {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.tagBox {
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.tagBox div {
+  float: right;
+  padding: 0 5px 0 5px;
+  background-color: #0e71a3;
   color: white;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+#arrowBox {
+  width: 0px;
+  height: 0px;
+  border: 10px solid white;
+  border-left-color: rgba(255, 255, 255, 0);
+  border-right-color: rgba(255, 255, 255, 0);
+  border-top-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 20px;
+  left: 140px;
 }
 </style>

@@ -1,16 +1,11 @@
 <template>
   <div>
-    <header>HEADER AREA PLACEHOLDER</header>
+    <Navigation></Navigation>
     <section
       id="titlePicture"
     >PUT THE ARTICLE PICTURE HERE AS A BACKGROUND, AND ATTACH WITH SOME LINES OF TEXT AS ARTICLE BRIEF.</section>
+    <ShareSocial></ShareSocial>
     <div id="printArea">
-      <section id="shareSocial">
-        <div class="icon" title="share on facebook"></div>
-        <div class="icon" title="share on twitter"></div>
-        <div class="icon" title="share on google+"></div>
-        <div class="icon" title="share on linkedIn"></div>
-      </section>
       <section id="authorHeading">
         <div>
           <img src="../assets/head.png" alt="avatar not available" />
@@ -150,6 +145,74 @@
         </div>
       </section>
     </div>
+    <section id="recommendations">
+      <h2>More From Torneo</h2>
+      <ul>
+        <li class="tile">
+          <div class="idBox">
+            <div class="imgBox">
+              <img src="../assets/head.png" alt="img n.a." />
+            </div>
+            <div class="nameBox">Author Name</div>
+            <div class="dateBox">
+              Sept 2, 2019
+              <br />5 mins read
+            </div>
+          </div>
+          <div class="thumbnailBox"></div>
+          <div class="titleBox">
+            Article Title
+            <br />
+            <a href="#">Article sample brief text</a>
+          </div>
+          <div class="tagBox">
+            <div class="tagClass">tag</div>
+          </div>
+        </li>
+        <li class="tile">
+          <div class="idBox">
+            <div class="imgBox">
+              <img src="../assets/head.png" alt="img n.a." />
+            </div>
+            <div class="nameBox">Author Name</div>
+            <div class="dateBox">
+              Sept 2, 2019
+              <br />5 mins read
+            </div>
+          </div>
+          <div class="thumbnailBox"></div>
+          <div class="titleBox">
+            Article Title
+            <br />
+            <a href="#">Article sample brief text</a>
+          </div>
+          <div class="tagBox">
+            <div class="tagClass">tag</div>
+          </div>
+        </li>
+        <li class="tile">
+          <div class="idBox">
+            <div class="imgBox">
+              <img src="../assets/head.png" alt="img n.a." />
+            </div>
+            <div class="nameBox">Author Name</div>
+            <div class="dateBox">
+              Sept 2, 2019
+              <br />5 mins read
+            </div>
+          </div>
+          <div class="thumbnailBox"></div>
+          <div class="titleBox">
+            Article Title
+            <br />
+            <a href="#">Article sample brief text</a>
+          </div>
+          <div class="tagBox">
+            <div class="tagClass">tag</div>
+          </div>
+        </li>
+      </ul>
+    </section>
     <footer>
       <div id="emailInputContainer">
         <label for="emailInput">Receive Weekly Articles:</label>
@@ -162,14 +225,21 @@
         <span class="icon1" title="follow on google+"></span>
         <span class="icon1" title="follow on linkedIn"></span>
       </div>
+      <div id="brandMark">Torneo Data Analytics</div>
     </footer>
   </div>
 </template>
 
 <script>
+import Navigation from "../components/Navigation";
+import ShareSocial from "../components/ShareSocial";
 import { mapState } from "vuex";
 export default {
   name: "Read",
+  components: {
+    Navigation,
+    ShareSocial
+  },
   computed: {
     ...mapState(["essays"]),
     articleTag() {
@@ -188,34 +258,18 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "icomoon";
-  src: url("../assets/fonts/icomoon.eot?mvezlv");
-  src: url("../assets/fonts/icomoon.eot?mvezlv#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/icomoon.ttf?mvezlv") format("truetype"),
-    url("../assets/fonts/icomoon.woff?mvezlv") format("woff"),
-    url("../assets/fonts/icomoon.svg?mvezlv#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-header {
-  width: 100%;
-  background-color: #363e4f;
-  height: 120px;
-  color: white;
-}
 #titlePicture {
   width: 100%;
-  height: 350px;
-  background-image: url("../assets/slide.png");
+  height: 400px;
+  /* you can put here a background-image instead of background-color */
+  background-color: #0e71a3;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Quicksand";
   font-size: 26px;
   text-align: right;
   box-sizing: border-box;
-  padding-top: 80px;
+  padding-top: 130px;
   padding-right: 40px;
   padding-left: 400px;
   color: white;
@@ -223,9 +277,9 @@ header {
   overflow: hidden;
 }
 #printArea {
-  width: 90%;
+  width: 70%;
   position: relative;
-  left: 5%;
+  left: 15%;
   top: 0;
   padding: 150px 70px 30px 70px;
   box-sizing: border-box;
@@ -253,48 +307,6 @@ header {
   font-size: 16px;
   font-style: oblique;
 }
-#shareSocial {
-  width: 50px;
-  height: 240px;
-  position: fixed;
-  bottom: 100px;
-  left: 10px;
-  z-index: 100;
-}
-#shareSocial .icon {
-  font-family: "icomoon";
-  width: 100%;
-  height: 50px;
-  margin-bottom: 10px;
-  font-size: 30px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #e6e6e6;
-  border-radius: 50%;
-  cursor: pointer;
-  user-select: none;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
-}
-#shareSocial .icon:hover {
-  background-color: #b3b3b3;
-  font-size: 36px;
-}
-#shareSocial .icon:active {
-  background-color: #f2f2f2;
-  font-size: 36px;
-}
-#shareSocial .icon:nth-child(1) {
-  color: darkblue;
-}
-#shareSocial .icon:nth-child(2) {
-  color: deepskyblue;
-}
-#shareSocial .icon:nth-child(3) {
-  color: crimson;
-}
-#shareSocial .icon:nth-child(4) {
-  color: limegreen;
-}
 #articleBody {
   width: 100%;
   box-sizing: border-box;
@@ -316,7 +328,7 @@ header {
   padding: 0 15px 0 15px;
   margin-left: 10px;
   margin-bottom: 5px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   box-sizing: border-box;
 }
 #authorBio {
@@ -396,7 +408,7 @@ header {
 #commentAdd .nameArea button {
   height: 100%;
   width: 100px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   font-size: 20px;
   font-weight: bold;
   float: right;
@@ -406,7 +418,7 @@ header {
   width: 100%;
   height: 150px;
   margin-top: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-size: 20px;
   padding: 10px;
   resize: none;
@@ -424,7 +436,7 @@ header {
   box-sizing: border-box;
   padding: 30px 30px 10px 30px;
   margin-bottom: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 #commentList .nameArea {
   width: 100%;
@@ -474,7 +486,6 @@ header {
   font-size: 20px;
   box-sizing: border-box;
   margin-left: 100px;
-  border-radius: 10px;
   font-family: "icomoon";
   text-align: center;
   line-height: 30px;
@@ -487,7 +498,6 @@ header {
 #commentList .interactBtns .share:hover {
   color: #f15b24;
 }
-
 footer {
   width: 100%;
   height: 130px;
@@ -545,30 +555,164 @@ label {
   display: inline-block;
   width: 40px;
   height: 100%;
-  background-color: #e6e6e6;
+  background-color: #f2f2f2;
+  color: #363e4f;
   font-size: 26px;
   text-align: center;
   line-height: 40px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   margin-left: 20px;
   cursor: pointer;
 }
 #icon1Container .icon1:hover {
-  background-color: #b3b3b3;
+  color: #0e71a3;
 }
 #icon1Container .icon1:active {
-  background-color: #f2f2f2;
+  color: #f15b24;
 }
-#icon1Container .icon1:nth-child(1) {
-  color: darkblue;
+#brandMark {
+  position: absolute;
+  top: 70px;
+  left: 50px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Quicksand;
 }
-#icon1Container .icon1:nth-child(2) {
-  color: deepskyblue;
+#recommendations ul {
+  height: 350px;
+  width: 86%;
+  position: relative;
+  left: 7%;
+  display: flex;
+  justify-content: space-around;
 }
-#icon1Container .icon1:nth-child(3) {
-  color: crimson;
+#recommendations h2 {
+  height: 50px;
+  width: 86%;
+  position: relative;
+  left: 7%;
+  line-height: 50px;
+  text-align: center;
 }
-#icon1Container .icon1:nth-child(4) {
-  color: limegreen;
+/*-----------------------------------*/
+.tile {
+  width: 400px;
+  min-width: 400px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+.tile:hover {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+}
+.idBox {
+  height: 20%;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: 0px;
+  color: white;
+}
+.imgBox {
+  width: 20%;
+  height: 100%;
+  padding-top: 6px;
+  padding-left: 6px;
+  box-sizing: border-box;
+  float: left;
+}
+.imgBox img {
+  width: 52px;
+  height: 52px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.nameBox {
+  float: left;
+  width: 40%;
+  height: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 65px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.dateBox {
+  width: 40%;
+  height: 100%;
+  float: left;
+  padding-right: 20px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 14px;
+}
+.thumbnailBox {
+  height: 100%;
+  width: 100%;
+  /* you can put here a background-image instead of background-color */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in;
+}
+.tile:hover .thumbnailBox {
+  /* you can put here a background-image instead of background-color */
+}
+.titleBox {
+  height: 10%;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  font-weight: bold;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: 20%;
+  transition-duration: 200ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+.titleBox a {
+  font-weight: normal;
+  font-size: 14px;
+}
+.tile:hover .titleBox {
+  height: 35%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.tagBox {
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 4px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: 2.5%;
+}
+.tagClass {
+  float: right;
+  padding: 0 5px 0 5px;
+  height: 22px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 4px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 </style>

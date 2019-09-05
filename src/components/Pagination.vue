@@ -1,6 +1,5 @@
 <template>
   <div id="pageLayout">
-    <Search></Search>
     <router-view></router-view>
     <div id="pageBox">
       <div id="goHead" class="operatorBtn" v-on:click="goHead">&lt;&lt;</div>
@@ -22,12 +21,8 @@
 </template>
 
 <script>
-import Search from "../components/Search";
 export default {
   name: "Pagination",
-  components: {
-    Search
-  },
   data() {
     return {
       pageMark: 1
@@ -136,7 +131,6 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  background-color: rgba(0, 0, 0, 0.1);
   max-width: 360px;
   min-width: 200px;
   height: 40px;
@@ -145,8 +139,8 @@ export default {
   font-weight: bold;
   font-size: 20px;
   font-family: Quicksand;
-  border-radius: 10px;
   user-select: none;
+  border-bottom: 1px solid #363e4f;
 }
 #pageListFrame {
   height: 100%;
@@ -166,13 +160,12 @@ export default {
 .operatorBtn {
   width: 40px;
   height: 100%;
-  background-color: #0e71a3;
-  border-radius: 25%;
   cursor: pointer;
-  color: white;
+  color: #363e4f;
+  line-height: 35px;
 }
 .operatorBtn:hover {
-  background-color: #42bae1;
+  color: #f15b24;
 }
 #goHead,
 #goPrev {
@@ -190,7 +183,7 @@ export default {
   background-color: #363e4f;
   width: 40px;
   height: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   cursor: pointer;
   color: white;
   float: left;

@@ -210,7 +210,7 @@ export default {
   width: 20%;
   height: 30px;
   outline: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   font-weight: 700;
   cursor: pointer;
 }
@@ -222,7 +222,7 @@ export default {
   background-color: black;
   color: white;
   box-sizing: border-box;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;

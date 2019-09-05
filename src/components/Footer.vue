@@ -3,16 +3,16 @@
     <div id="follow">Follow Us:</div>
     <div id="icons">
       <span class="link">
-        <a href="#">Twitter</a>
+        <a href="#"></a>
       </span>
       <span class="link">
-        <a href="#">Facebook</a>
+        <a href="#"></a>
       </span>
       <span class="link">
-        <a href="#">Linkedin</a>
+        <a href="#"></a>
       </span>
       <span class="link">
-        <a href="#">Instagram</a>
+        <a href="#"></a>
       </span>
     </div>
   </div>
@@ -29,10 +29,12 @@ export default {
   width: 100%;
   height: 130px;
   background-color: #363e4f;
-  padding-top: 30px;
+  padding-top: 15px;
   font-family: Quicksand;
   color: white;
   box-sizing: border-box;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #follow {
   width: 20%;
@@ -40,32 +42,28 @@ export default {
   position: relative;
   left: 40%;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   line-height: 50px;
 }
 #icons {
   position: relative;
-  width: 40%;
+  width: 30%;
   height: 50px;
-  left: 30%;
+  left: 35%;
   text-align: center;
   font-size: 22px;
   line-height: 50px;
-}
-#icons .link:nth-child(2) {
-  margin-left: 10px;
-  margin-right: 5px;
-}
-#icons .link:nth-child(3) {
-  margin-left: 5px;
-  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 .link a {
   color: white;
+  font-family: "icomoon";
+  font-size: 24px;
 }
 .link a:hover {
   color: #f15b24;
-  text-decoration: underline;
 }
 </style>

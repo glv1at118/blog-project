@@ -3,32 +3,54 @@
     <ul id="slider" ref="slider">
       <!-- bind @click event callbacks to the "li" -->
       <li class="slide">
-        <h1>T1: A Discussion of The Theory of "Hello World"</h1>
-        <br />
-        <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        <div class="shade">
+          <h1>T1: A Discussion of The Theory of "Hello World"</h1>
+          <br />
+          <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        </div>
       </li>
       <li class="slide">
-        <h1>T2: A detailed analysis of Hello World Data Model</h1>
-        <br />
-        <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        <div class="shade">
+          <h1>T2: A detailed analysis of Hello World Data Model</h1>
+          <br />
+          <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        </div>
       </li>
       <li class="slide">
-        <h1>T3: Hello World is An Old Proverb in the Programming World</h1>
-        <br />
-        <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        <div class="shade">
+          <h1>T3: Hello World is An Old Proverb in the Programming World</h1>
+          <br />
+          <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        </div>
       </li>
       <li class="slide">
-        <h1>T1: A Discussion of The Theory of "Hello World"</h1>
-        <br />
-        <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        <div class="shade">
+          <h1>T1: A Discussion of The Theory of "Hello World"</h1>
+          <br />
+          <p>Hello world is a very promising programming language in 2019, according to latest analysis</p>
+        </div>
       </li>
     </ul>
-    <div id="btn_previous" v-on:click="goPrevious"></div>
-    <div id="btn_next" v-on:click="goNext"></div>
+    <div id="btn_previous" v-on:click="goPrevious"></div>
+    <div id="btn_next" v-on:click="goNext"></div>
     <div id="pagination_box" ref="pagination_box">
       <ul>
         <li v-for="x in num" v-bind:key="x" v-bind:class="['dot', x===i? 'dot-active': '']"></li>
       </ul>
+    </div>
+    <div id="fastLinkBox">
+      <div>
+        <a href="#">FAST LINK 1</a>
+      </div>
+      <div>
+        <a href="#">FAST LINK 2</a>
+      </div>
+      <div>
+        <a href="#">FAST LINK 3</a>
+      </div>
+      <div>
+        <a href="#">FAST LINK 4</a>
+      </div>
     </div>
   </div>
 </template>
@@ -171,43 +193,38 @@ export default {
 </script>
 
 <style scoped>
-@font-face {
-  font-family: "icomoon";
-  src: url("../assets/fonts/icomoon.eot?v7aonl");
-  src: url("../assets/fonts/icomoon.eot?v7aonl#iefix")
-      format("embedded-opentype"),
-    url("../assets/fonts/icomoon.ttf?v7aonl") format("truetype"),
-    url("../assets/fonts/icomoon.woff?v7aonl") format("woff"),
-    url("../assets/fonts/icomoon.svg?v7aonl#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 #sliderContainer {
-  /* background-color: #f15b24; */
   width: 100%;
-  height: 350px;
+  height: 425px;
   font-family: Quicksand;
   color: white;
   position: relative;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #slider {
-  height: 100%;
+  height: 390px;
   width: 400%;
   position: absolute;
   top: 0;
   left: 0;
 }
 .slide {
-  box-sizing: border-box;
   width: 25%;
   height: 100%;
   float: left;
-  padding: 40px 130px 40px 130px;
-  background-image: url("../assets/slide.png");
+  /* you can put here a background-image instead of background-color */
+  background-color: #0e71a3;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+}
+.slide .shade {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 390px;
+  padding: 90px 130px 90px 130px;
+  box-sizing: border-box;
 }
 .slide h1 {
   font-size: 48px;
@@ -221,14 +238,17 @@ export default {
   background-color: rgba(255, 255, 255, 0.2);
   width: 50px;
   height: 50px;
-  font-size: 30px;
+  font-size: 22px;
   text-align: center;
   line-height: 50px;
-  top: 150px;
+  top: 198px;
   cursor: pointer;
   user-select: none;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   font-family: "icomoon";
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
 }
 #btn_previous {
   left: 40px;
@@ -239,21 +259,15 @@ export default {
 #btn_previous:hover,
 #btn_next:hover {
   background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #pagination_box {
   position: absolute;
-  bottom: 20px;
+  top: 335px;
   width: 120px;
   height: 30px;
-  border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
-}
-a {
-  color: white;
-}
-a:hover {
-  text-decoration: underline;
 }
 .dot {
   background-color: rgba(0, 0, 0, 0.5);
@@ -262,9 +276,44 @@ a:hover {
   float: left;
   box-sizing: border-box;
   margin: 9px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .dot-active {
   background-color: rgba(255, 255, 255) !important;
+}
+#fastLinkBox {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding-left: 130px;
+  background-color: #363e4f;
+  user-select: none;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+}
+#fastLinkBox div {
+  float: left;
+  height: 30px;
+  margin-top: 2.5px;
+  line-height: 30px;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-bottom: 2px solid #363e4f;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+#fastLinkBox div:hover {
+  border-bottom: 2px solid #f15b24;
+}
+#fastLinkBox div a {
+  color: white;
+}
+#fastLinkBox div:hover a {
+  color: #f15b24;
 }
 </style>

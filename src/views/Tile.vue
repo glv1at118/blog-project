@@ -14,9 +14,8 @@
           </div>
           <div class="nameBox">{{essay.author}}</div>
           <div class="dateBox">
-            {{essay.dateInfo}}
-            <br />
-            {{essay.essayLength}}
+            <p>{{essay.dateInfo}}</p>
+            <p>{{essay.essayLength}}</p>
           </div>
         </div>
         <div class="thumbnailBox"></div>
@@ -123,12 +122,13 @@ export default {
   min-width: 400px;
   height: 300px;
   margin: 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   overflow: hidden;
   position: relative;
   transition-duration: 100ms;
   transition-property: all;
   transition-timing-function: ease-in-out;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 .tile:hover {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
@@ -179,7 +179,8 @@ export default {
 .thumbnailBox {
   height: 100%;
   width: 100%;
-  background-image: url("../assets/thumbnail.png");
+  /* you can put here a background-image instead of background-color */
+  background-color: #0e71a3;
   background-size: cover;
   background-repeat: no-repeat;
   transition-duration: 200ms;
@@ -187,7 +188,8 @@ export default {
   transition-timing-function: ease-in;
 }
 .tile:hover .thumbnailBox {
-  background-image: url("../assets/thumbnail2.png");
+  /* you can put here a background-image instead of background-color */
+  background-color: #42bae1;
 }
 .titleBox {
   height: 10%;
@@ -202,6 +204,7 @@ export default {
   position: absolute;
   left: 0px;
   bottom: 20%;
+  color: white;
   transition-duration: 200ms;
   transition-property: all;
   transition-timing-function: ease-in-out;
@@ -209,6 +212,8 @@ export default {
 .titleBox a {
   font-weight: normal;
   font-size: 14px;
+  font-style: oblique;
+  color: white;
 }
 .tile:hover .titleBox {
   height: 35%;
@@ -228,7 +233,7 @@ export default {
   float: right;
   padding: 0 5px 0 5px;
   height: 22px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   margin-right: 5px;
   margin-bottom: 4px;
   text-align: center;
@@ -258,7 +263,7 @@ export default {
   position: absolute;
   left: 5%;
   top: 30px;
-  border-radius: 25px;
+  /* border-radius: 25px; */
   border: 1px solid gray;
   font-size: 24px;
   padding-left: 20px;
@@ -267,7 +272,7 @@ export default {
   outline: none;
   width: 50%;
   height: 40px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   border: 1px solid gray;
   font-size: 20px;
   position: absolute;
@@ -304,7 +309,7 @@ export default {
   padding-right: 10px;
   height: 30px;
   line-height: 30px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   color: white;
   background-color: #363e4f;
   cursor: pointer;
