@@ -213,32 +213,21 @@
         </li>
       </ul>
     </section>
-    <footer>
-      <div id="emailInputContainer">
-        <label for="emailInput">Receive Weekly Articles:</label>
-        <input type="text" id="emailInput" placeholder="enter email..." />
-        <button id="subscribe">subscribe</button>
-      </div>
-      <div id="icon1Container">
-        <span class="icon1" title="follow on facebook"></span>
-        <span class="icon1" title="follow on twitter"></span>
-        <span class="icon1" title="follow on google+"></span>
-        <span class="icon1" title="follow on linkedIn"></span>
-      </div>
-      <div id="brandMark">Torneo Data Analytics</div>
-    </footer>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import Navigation from "../components/Navigation";
 import ShareSocial from "../components/ShareSocial";
+import Footer from "../components/Footer";
 import { mapState } from "vuex";
 export default {
   name: "Read",
   components: {
     Navigation,
-    ShareSocial
+    ShareSocial,
+    Footer
   },
   computed: {
     ...mapState(["essays"]),
@@ -275,6 +264,7 @@ export default {
   color: white;
   font-style: oblique;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #printArea {
   width: 70%;
@@ -297,7 +287,7 @@ export default {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #authorHeading .p1 {
   font-weight: bold;
@@ -424,7 +414,7 @@ export default {
   resize: none;
 }
 #commentAdd #contentArea:focus {
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
   border: 1px solid #363e4f;
 }
 #commentList {
@@ -432,7 +422,7 @@ export default {
   margin-top: 50px;
 }
 #commentList .comment {
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   padding: 30px 30px 10px 30px;
   margin-bottom: 20px;
@@ -497,86 +487,6 @@ export default {
 #commentList .interactBtns .reply:hover,
 #commentList .interactBtns .share:hover {
   color: #f15b24;
-}
-footer {
-  width: 100%;
-  height: 130px;
-  background-color: #363e4f;
-  position: relative;
-  color: white;
-}
-#emailInputContainer {
-  display: inline-block;
-  height: 40px;
-  width: 800px;
-  text-align: right;
-  line-height: 40px;
-  position: absolute;
-  top: 20px;
-  right: 50px;
-}
-label {
-  font-family: "Quicksand";
-  font-size: 20px;
-  font-weight: 700;
-}
-#emailInput {
-  border-style: none;
-  box-sizing: border-box;
-  height: 30px;
-  width: 400px;
-  vertical-align: center;
-  padding-left: 10px;
-  font-size: 20px;
-  margin-left: 10px;
-}
-#subscribe {
-  vertical-align: center;
-  height: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: 5px;
-  font-weight: 700;
-  font-size: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  user-select: none;
-}
-#icon1Container {
-  font-family: "icomoon";
-  position: absolute;
-  height: 40px;
-  width: 240px;
-  top: 70px;
-  right: 50px;
-  user-select: none;
-}
-#icon1Container .icon1 {
-  display: inline-block;
-  width: 40px;
-  height: 100%;
-  background-color: #f2f2f2;
-  color: #363e4f;
-  font-size: 26px;
-  text-align: center;
-  line-height: 40px;
-  /* border-radius: 50%; */
-  margin-left: 20px;
-  cursor: pointer;
-}
-#icon1Container .icon1:hover {
-  color: #0e71a3;
-}
-#icon1Container .icon1:active {
-  color: #f15b24;
-}
-#brandMark {
-  position: absolute;
-  top: 70px;
-  left: 50px;
-  font-weight: bold;
-  font-size: 30px;
-  font-family: Quicksand;
 }
 #recommendations ul {
   height: 350px;

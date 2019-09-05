@@ -61,7 +61,7 @@ export default {
   /* border-radius: 50%; */
   cursor: pointer;
   user-select: none;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 #shareSocial .icon:hover {
   font-size: 34px;

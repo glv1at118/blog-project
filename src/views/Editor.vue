@@ -58,11 +58,12 @@
 
     <div ref="workarea" id="workarea"></div>
 
-    <button v-on:click="uploadDoc()" class="custom_btn">upload doc to backend</button>
-    <button v-on:click="saveToDataAsTemp()" class="custom_btn">save doc to local</button>
-    <button v-on:click="retriveFromData()" class="custom_btn">retrive saved doc from local</button>
-    <button v-on:click="addTag()" class="custom_btn">add a tag</button>
-    <button v-on:click="deleteTag()" class="custom_btn">delete a tag</button>
+    <button v-on:click="uploadDoc()" class="custom_btn">Upload Doc To Backend</button>
+    <button v-on:click="saveToDataAsTemp()" class="custom_btn">Save Doc To Local</button>
+    <button v-on:click="retriveFromData()" class="custom_btn">Retrive Saved Doc From Local</button>
+    <button v-on:click="addTag()" class="custom_btn">Add A Tag</button>
+    <button v-on:click="deleteTag()" class="custom_btn">Delete A Tag</button>
+
     <div id="tagDisplayArea">Tags: {{tagArray}}</div>
   </div>
 </template>
@@ -210,25 +211,36 @@ export default {
   width: 20%;
   height: 30px;
   outline: none;
-  /* border-radius: 10px; */
   font-weight: 700;
+  font-size: 16px;
+  font-family: "Quicksand";
   cursor: pointer;
+  border: none;
+  background-color: #363e4f;
+  color: white;
+  transition-duration: 100ms;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+.custom_btn:hover {
+  background-color: #f15b24;
+}
+.custom_btn:active {
+  background-color: #42bae1;
 }
 #tagDisplayArea {
   width: 100%;
   height: 100px;
   margin-top: 30px;
   border: 2px solid gray;
-  background-color: black;
-  color: white;
   box-sizing: border-box;
-  /* border-radius: 10px; */
   padding-top: 10px;
   padding-left: 30px;
   padding-right: 30px;
   font-weight: bold;
   font-size: 20px;
   overflow: auto;
+  font-family: "Quicksand";
 }
 #workarea .ql-editor {
   min-height: 400px;
