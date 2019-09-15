@@ -58,13 +58,38 @@ export default {
         }
     },
     increaseSum(state, payload) {
-        // @params:
+        // @params: { essayTitle, index, subIndex, category, deep }
         // category can be "likes"/"shares"/"replies"
+        // if deep is true, then it increases the category sum of sub-replies.
+        // if deep is false, then if increases the category sum of comments only.
+
         for (let x = 0; x < state.essays.length; x++) {
             if (state.essays[x].essayTitle === payload.essayTitle) {
-                state.essays[x].commentList[payload.index][payload.category]++
+                if (payload.deep) {
+                    state.essays[x].commentList[payload.index].replyItems[payload.subIndex][payload.category]++;
+                    break;
+                } else {
+                    state.essays[x].commentList[payload.index][payload.category]++
+                    break;
+                }
+            }
+        }
+    },
+    addReplyItem(state, payload) {
+        // @params: payload structure --> properties:
+        // essayTitle, index (the index for the items in the "commentList" in data), comment
+        for (let x = 0; x < state.essays.length; x++) {
+            if (state.essays[x].essayTitle === payload.essayTitle) {
+                state.essays[x].commentList[payload.index].replyItems.unshift(payload.comment);
                 break;
             }
         }
+    },
+    updateModalDataTemp(state, payload) {
+        state.modalDataTemp = {
+            essayTitle: payload.essayTitle,
+            index: payload.index,
+            replyToName: payload.replyToName
+        };
     }
 }

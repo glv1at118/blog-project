@@ -8,6 +8,7 @@
     <Footer></Footer>
     <GoTop></GoTop>
     <AdminControl></AdminControl>
+    <ShareSocial></ShareSocial>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import Footer from "../components/Footer";
 import GoTop from "../components/GoTop";
 import AdminControl from "../components/AdminControl";
 import Search from "../components/Search";
+import ShareSocial from "../components/ShareSocial";
 export default {
   name: "Layout",
   components: {
@@ -28,7 +30,8 @@ export default {
     GoTop,
     AdminControl,
     Navigation,
-    Search
+    Search,
+    ShareSocial
   }
 };
 </script>

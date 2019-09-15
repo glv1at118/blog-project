@@ -16,7 +16,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -24,7 +42,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -32,7 +68,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -52,7 +106,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -60,7 +132,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -68,7 +158,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -88,7 +196,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -96,7 +222,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -104,7 +248,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -124,7 +286,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -132,7 +312,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -140,7 +338,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -160,7 +376,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -168,7 +402,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -176,7 +428,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -196,7 +466,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -204,7 +492,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -212,7 +518,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -232,7 +556,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -240,7 +582,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -248,7 +608,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -268,7 +646,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -276,7 +672,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -284,7 +698,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -304,7 +736,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -312,7 +762,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -320,7 +788,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -340,7 +826,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -348,7 +852,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -356,7 +878,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -376,7 +916,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -384,7 +942,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -392,7 +968,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -412,7 +1006,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -420,7 +1032,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -428,7 +1058,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -448,7 +1096,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -456,7 +1122,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -464,7 +1148,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -484,7 +1186,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -492,7 +1212,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -500,7 +1238,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -520,7 +1276,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -528,7 +1302,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -536,7 +1328,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -556,7 +1366,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -564,7 +1392,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -572,7 +1418,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         },
@@ -592,7 +1456,25 @@ export default {
                     content: "Hello, the article is really helpful to me! I hope to see more articles from you!",
                     likes: 10,
                     replies: 20,
-                    shares: 10
+                    shares: 10,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 2",
@@ -600,7 +1482,25 @@ export default {
                     content: "Hi, I have read the article. It is really professional in the data science. Thanks to this article, I have saved a million dollars!",
                     likes: 8,
                     replies: 10,
-                    shares: 9
+                    shares: 9,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 },
                 {
                     readerName: "User Name 3",
@@ -608,7 +1508,25 @@ export default {
                     content: "Hey, I think there is something in the article which needs more clarifications. Can you write with more details? Can you tell me how to write an article which will be helpful to other people? Thanks!",
                     likes: 7,
                     replies: 10,
-                    shares: 20
+                    shares: 20,
+                    replyItems: [
+                        {
+                            readerName: "Tomcat",
+                            threadTime: "August 01, 2020, 4:30PM",
+                            content: "Hi! I think your comments are as great as the article itself! I'd like to see more of them :)",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        },
+                        {
+                            readerName: "Apache",
+                            threadTime: "September 30, 2030, 5:30PM",
+                            content: "@Tomcat Could you let know why you think his comments are as great as the article? Thanks!",
+                            likes: 3,
+                            replies: 2,
+                            shares: 1
+                        }
+                    ]
                 }
             ]
         }
@@ -626,5 +1544,11 @@ export default {
     editorMode: false,
     // stores the index of the article in essays array to be recommended
     recommendedIndex: [3, 4, 7, 9],
-
+    modalDataTemp: {
+        essayTitle: "",
+        index: 0,
+        subIndex: 0,
+        replyToName: "",
+        deepVal: false
+    }
 }

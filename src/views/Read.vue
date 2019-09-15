@@ -117,31 +117,51 @@
         >{{triggerText}} ({{articleCommentList().length}})</div>
 
         <ul id="commentList" v-show="showCommentList">
-          <li
-            class="comment"
-            v-for="(userComment, index) in articleCommentList()"
-            v-bind:key="index"
-          >
-            <div class="nameArea">
-              <div>
-                <img src="../assets/head.png" alt="avatar not available" />
+          <li v-for="(userComment, index) in articleCommentList()" v-bind:key="index">
+            <div class="commentBox">
+              <div class="nameArea">
+                <div>
+                  <img src="../assets/head.png" alt="avatar not available" />
+                </div>
+                <div>{{userComment.readerName}}</div>
+                <div>{{userComment.threadTime}}</div>
               </div>
-              <div>{{userComment.readerName}}</div>
-              <div>{{userComment.threadTime}}</div>
+              <div class="thread">{{userComment.content}}</div>
+              <div class="interactBtns">
+                <div class="shareNumber">{{userComment.shares}}</div>
+                <div class="share" v-on:click="doShare(index, false, undefined)"></div>
+                <div class="replyNumber">{{userComment.replies}}</div>
+                <div class="reply" v-on:click="doReply(index, undefined, userComment.readerName)"></div>
+                <div class="likeNumber">{{userComment.likes}}</div>
+                <div class="like" v-on:click="doLike(index, false, undefined)"></div>
+              </div>
             </div>
-            <div class="thread">{{userComment.content}}</div>
-            <div class="interactBtns">
-              <div class="shareNumber">{{userComment.shares}}</div>
-              <div class="share" v-on:click="doShare(index)"></div>
-              <div class="replyNumber">{{userComment.replies}}</div>
-              <div class="reply" v-on:click="doReply(index)"></div>
-              <div class="likeNumber">{{userComment.likes}}</div>
-              <div class="like" v-on:click="doLike(index)"></div>
-            </div>
+            <ul class="replyBox">
+              <li class="replyItem" v-for="(r, i) in userComment.replyItems" v-bind:key="i">
+                <div class="nameArea">
+                  <div>
+                    <img src="../assets/head.png" alt="avatar not available" />
+                  </div>
+                  <div>{{r.readerName}}</div>
+                  <div>{{r.threadTime}}</div>
+                </div>
+                <div class="thread">{{r.content}}</div>
+                <div class="interactBtns">
+                  <div class="shareNumber">{{r.shares}}</div>
+                  <div class="share" v-on:click="doShare(index, true, i)"></div>
+                  <div class="replyNumber">{{r.replies}}</div>
+                  <div class="reply" v-on:click="doReply(index, i, r.readerName)"></div>
+                  <div class="likeNumber">{{r.likes}}</div>
+                  <div class="like" v-on:click="doLike(index, true, i)"></div>
+                </div>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
     </div>
+
+    <ReplyModal v-bind:_showReplyModal="modalVal" v-on:changeModalVal="modalValHandler"></ReplyModal>
 
     <hr class="customHr" />
 
@@ -176,6 +196,7 @@ import GoTop from "../components/GoTop";
 import Navigation from "../components/Navigation";
 import ShareSocial from "../components/ShareSocial";
 import Footer from "../components/Footer";
+import ReplyModal from "../components/ReplyModal";
 import { mapState } from "vuex";
 export default {
   name: "Read",
@@ -183,13 +204,15 @@ export default {
     Navigation,
     ShareSocial,
     Footer,
-    GoTop
+    GoTop,
+    ReplyModal
   },
   data() {
     return {
       userInput: "",
       showCommentList: false,
-      triggerText: "Click to See All Responses"
+      triggerText: "Click to See All Responses",
+      modalVal: false
     };
   },
   computed: {
@@ -214,10 +237,7 @@ export default {
         }
       }
     },
-    publishComment() {
-      if (this.userInput === "") {
-        return;
-      }
+    getSystemTime() {
       let d = new Date();
       let day = d.getDate();
       let month = d.getMonth() + 1;
@@ -286,45 +306,59 @@ export default {
         minute +
         section;
 
+      return timeStr;
+    },
+    publishComment() {
+      if (this.userInput === "") {
+        return;
+      }
       let payload = {
         essayTitle: this.$route.params.essayTitle,
         comment: {
           readerName: "User Name X",
-          threadTime: timeStr,
+          threadTime: this.getSystemTime(),
           content: this.userInput,
           likes: 0,
           replies: 0,
-          shares: 0
+          shares: 0,
+          replyItems: []
         }
       };
       this.$store.commit("addComment", payload);
       this.userInput = "";
     },
-    doShare(index) {
+    doShare(index, deepVal, subIndex) {
       // some backend logic here...
       console.log("This comment tread has been shared!");
       let payload = {
         essayTitle: this.$route.params.essayTitle,
         index: index,
-        category: "shares"
+        category: "shares",
+        deep: deepVal,
+        subIndex: subIndex
       };
       this.$store.commit("increaseSum", payload);
     },
-    doLike(index) {
+    doLike(index, deepVal, subIndex) {
       let payload = {
         essayTitle: this.$route.params.essayTitle,
         index: index,
-        category: "likes"
+        category: "likes",
+        deep: deepVal,
+        subIndex: subIndex
       };
       this.$store.commit("increaseSum", payload);
     },
-    doReply(index) {
-      let payload = {
+    doReply(indexOut, indexIn, replyToName, deepVal) {
+      // index is the index outside. i is the index inside.
+      this.modalVal = true;
+      this.$store.commit("updateModalDataTemp", {
         essayTitle: this.$route.params.essayTitle,
-        index: index,
-        category: "replies"
-      };
-      this.$store.commit("increaseSum", payload);
+        index: indexOut,
+        replyToName: replyToName,
+        deepVal: deepVal,
+        subIndex: indexOut
+      });
     },
     listTrigger() {
       this.showCommentList = !this.showCommentList;
@@ -333,6 +367,9 @@ export default {
       } else {
         this.triggerText = "Click to See All Responses";
       }
+    },
+    modalValHandler(val) {
+      this.modalVal = val;
     }
   }
 };
@@ -547,13 +584,7 @@ export default {
 #commentList {
   width: 100%;
   margin-top: 30px;
-}
-#commentList .comment {
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  padding: 30px 30px 30px 30px;
-  margin-bottom: 20px;
-  /* border-radius: 10px; */
+  position: relative;
 }
 #commentList .nameArea {
   width: 100%;
@@ -624,6 +655,28 @@ export default {
   font-family: "Quicksand";
   text-align: center;
   line-height: 30px;
+}
+#commentList .commentBox {
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding: 30px 30px 30px 30px;
+  margin-bottom: 10px;
+  /* border-radius: 10px; */
+}
+#commentList .replyBox {
+  box-sizing: border-box;
+  width: 90%;
+  position: relative;
+  top: 0px;
+  left: 10%;
+  margin-bottom: 20px;
+}
+#commentList .replyBox .replyItem {
+  margin-bottom: 10px;
+  padding: 20px 30px 20px 30px;
+  position: relative;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: whitesmoke;
 }
 .customHr {
   width: 80%;
