@@ -8,6 +8,7 @@
         cols="30"
         rows="10"
         v-model="textareaVal"
+        ref="textarea"
       ></textarea>
       <button id="submit" v-on:click="submitReply">Submit The Reply</button>
     </div>
@@ -36,6 +37,13 @@ export default {
   watch: {
     _showReplyModal(nVal) {
       this.showReplyModal = nVal;
+    },
+    showReplyModal(nVal) {
+      if (nVal) {
+        setTimeout(() => {
+          this.$refs.textarea.focus();
+        }, 0);
+      }
     }
   },
   methods: {

@@ -618,6 +618,7 @@ export default {
   margin-top: 20px;
   box-sizing: border-box;
   font-size: 18px;
+  word-wrap: break-word;
 }
 #commentList .interactBtns {
   width: 100%;
