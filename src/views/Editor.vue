@@ -205,11 +205,19 @@ export default {
 @import "../../node_modules/quill/dist/quill.core.css";
 @import "../../node_modules/quill/dist/quill.snow.css";
 @import "../../node_modules/quill/dist/quill.bubble.css";
-
+@media screen and (max-width: 830px) {
+  .custom_btn {
+    width: 100% !important;
+    height: 30px !important;
+  }
+  #workarea .ql-editor {
+    height: 500px !important;
+  }
+}
 .custom_btn {
   float: left;
   width: 20%;
-  height: 30px;
+  height: 50px;
   outline: none;
   font-weight: 700;
   font-size: 16px;
