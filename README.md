@@ -14,7 +14,7 @@ A blog page single page application project developed with Vue.js, Vue-Router, V
 - A square-like "Metro-Style" is applied throughout the page application, making the app look neat.
 - ... ...
 
-Some snapshots of the page application:
+Snapshots of the page application on computer screens:
 
 ![1](https://user-images.githubusercontent.com/44102726/64390839-6a214780-d014-11e9-8eb7-9d702c5a07e5.PNG)
 
@@ -45,6 +45,28 @@ Some snapshots of the page application:
 ------
 
 ![8](https://user-images.githubusercontent.com/44102726/64390923-b9677800-d014-11e9-983f-809952add8ed.PNG)
+
+Responsive layout on mobile devices (iPhone 5 & Galaxy S5 are not considered, as they are very old devices):
+
+![0](https://user-images.githubusercontent.com/44102726/64979808-7ca64700-d886-11e9-825b-beeb3b673c69.JPG)
+
+------
+
+![1](https://user-images.githubusercontent.com/44102726/64979809-7ca64700-d886-11e9-9de4-6cb99634853d.JPG)
+
+------
+
+![2](https://user-images.githubusercontent.com/44102726/64979810-7ca64700-d886-11e9-8b0c-0cab64c2ad5d.JPG)
+
+------
+
+![3](https://user-images.githubusercontent.com/44102726/64979811-7d3edd80-d886-11e9-9b57-5de854365492.JPG)
+
+------
+
+![4](https://user-images.githubusercontent.com/44102726/64979812-7d3edd80-d886-11e9-867a-70163b1e48da.JPG)
+
+
 
 ## Project setup
 
