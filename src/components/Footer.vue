@@ -40,10 +40,10 @@ export default {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 #follow {
-  width: 20%;
+  width: 50%;
   height: 40px;
   position: relative;
-  left: 40%;
+  left: 25%;
   font-weight: bold;
   font-size: 38px;
   text-align: center;

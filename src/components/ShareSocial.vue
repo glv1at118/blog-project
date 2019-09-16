@@ -35,6 +35,11 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 840px) {
+  #shareSocial {
+    display: none;
+  }
+}
 #shareSocial {
   width: 50px;
   height: 240px;

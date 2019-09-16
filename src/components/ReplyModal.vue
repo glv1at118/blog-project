@@ -168,6 +168,13 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 420px) {
+  #replyModal {
+    width: 90% !important;
+    left: 5% !important;
+    top: 10% !important;
+  }
+}
 #replyModalContainer {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);

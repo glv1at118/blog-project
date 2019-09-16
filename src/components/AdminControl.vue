@@ -20,6 +20,11 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 840px) {
+  #adminControl {
+    display: none;
+  }
+}
 #adminControl {
   width: 180px;
   height: 50px;

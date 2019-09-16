@@ -62,6 +62,11 @@ export default {
   font-style: normal;
   font-display: block;
 }
+@media screen and (max-width: 420px) {
+  #goTop {
+    display: none;
+  }
+}
 #goTop {
   width: 40px;
   height: 40px;

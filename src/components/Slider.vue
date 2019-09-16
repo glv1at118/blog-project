@@ -193,6 +193,19 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 840px) {
+  .slide h1 {
+    font-size: 40px !important;
+  }
+  .slide p {
+    font-size: 20px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  #sliderContainer {
+    display: none;
+  }
+}
 #sliderContainer {
   width: 100%;
   height: 425px;

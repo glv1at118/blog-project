@@ -376,6 +376,59 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 840px) {
+  #printArea {
+    width: 100% !important;
+    left: 0 !important;
+    padding: 150px 25px 30px 25px !important;
+  }
+  #titlePicture {
+    display: none;
+  }
+  #authorHeading {
+    top: 80px !important;
+  }
+  #authorHeading div img {
+    display: none;
+  }
+  #recommendations {
+    height: 1050px !important;
+  }
+  .recommendItem {
+    width: 100% !important;
+  }
+  #authorAvatar {
+    display: none;
+  }
+  #commentList .nameArea img {
+    display: none;
+  }
+  #commentList .commentBox {
+    padding: 15px 15px 15px 15px !important;
+  }
+  #commentList .replyBox .replyItem {
+    padding: 15px 15px 15px 15px !important;
+  }
+  #commentList .interactBtns .like,
+  #commentList .interactBtns .reply,
+  #commentList .interactBtns .share {
+    margin-left: 5px !important;
+    width: 30px !important;
+  }
+  #commentList .interactBtns .likeNumber,
+  #commentList .interactBtns .replyNumber,
+  #commentList .interactBtns .shareNumber {
+    width: 40px !important;
+  }
+  #commentList .nameArea div:nth-child(2) {
+    width: 130px !important;
+    line-height: 25px !important;
+  }
+  #commentList .nameArea div:nth-child(3) {
+    width: 130px !important;
+    line-height: 25px !important;
+  }
+}
 #titlePicture {
   width: 100%;
   height: 400px;
@@ -516,13 +569,13 @@ export default {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  margin-right: 30px;
+  margin-right: 10px;
   float: left;
 }
 #commentAdd .nameArea div:nth-child(2) {
   float: left;
   height: 100%;
-  width: 300px;
+  width: 160px;
   font-weight: bold;
   font-size: 20px;
   line-height: 50px;
@@ -550,7 +603,7 @@ export default {
 #commentAdd #contentArea {
   box-sizing: border-box;
   width: 100%;
-  height: 150px;
+  height: 125px;
   margin-top: 20px;
   /* border-radius: 10px; */
   font-size: 20px;
@@ -607,7 +660,7 @@ export default {
 }
 #commentList .nameArea div:nth-child(3) {
   height: 100%;
-  width: 250px;
+  width: 200px;
   float: right;
   text-align: right;
   line-height: 50px;

@@ -105,6 +105,12 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 420px) {
+  .tile {
+    width: 365px !important;
+    min-width: 365px !important;
+  }
+}
 #tileContainer {
   width: 100%;
   position: relative;
