@@ -66,6 +66,10 @@ Responsive layout on mobile devices (iPhone 5 & Galaxy S5 are not considered, as
 
 ![4](https://user-images.githubusercontent.com/44102726/64979812-7d3edd80-d886-11e9-867a-70163b1e48da.JPG)
 
+------
+
+![Capture](https://user-images.githubusercontent.com/44102726/64981155-72d21300-d889-11e9-90f0-d756c266b8bf.JPG)
+
 
 
 ## Project setup
