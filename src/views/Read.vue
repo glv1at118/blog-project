@@ -166,7 +166,7 @@
     <hr class="customHr" />
 
     <section id="recommendations">
-      <h2>More From Torneo</h2>
+      <h2>More From Company</h2>
       <ul id="recommendList">
         <li class="recommendItem" v-for="(articleId, index) in recommendedIndex" v-bind:key="index">
           <div class="recommendTitle">{{essays[articleId].essayTitle}}</div>
